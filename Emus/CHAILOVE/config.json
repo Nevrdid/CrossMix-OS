@@ -10,5 +10,11 @@
   "imgpath": "../../Imgs/CHAILOVE",
   "useswap": 0,
   "shortname": 0,
-  "hidebios": 0
+  "hidebios": 0,
+  "launchlist": [
+    {
+      "name": "Chailove (Libretro)",
+      "launch": "../._/chailove.sh"
+    }
+  ]
 }

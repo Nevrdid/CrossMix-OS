@@ -10,5 +10,11 @@
   "imgpath": "../../Imgs/X1",
   "useswap": 1,
   "shortname": 0,
-  "hidebios": 1
+  "hidebios": 1,
+  "launchlist": [
+    {
+      "name": "X1 (Libretro)",
+      "launch": "../._/x1.sh"
+    }
+  ]
 }

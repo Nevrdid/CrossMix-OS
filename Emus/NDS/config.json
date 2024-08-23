@@ -13,12 +13,12 @@
   "extlist": "nds|zip|7z|rar",
   "launchlist": [
     {
-      "name": "Drastic - SDL2 MOD(凯)",
-      "launch": "drastic.sh"
+      "name": "Drastic - SDL2 MOD (Standalone)",
+      "launch": "../._/drastic.sh"
     },
     {
-      "name": "Drastic - No MOD      ",
-      "launch": "drastic_no-mod.sh"
+      "name": "Drastic - No MOD (Standalone)",
+      "launch": "../._/drastic_no-mod.sh"
     }
   ]
 }

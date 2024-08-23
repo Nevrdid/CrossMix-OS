@@ -19,31 +19,31 @@
     },
     {
       "name": "ParaLLEl N64",
-      "launch": "paralleln64.sh"
+      "launch": "../._/paralleln64.sh"
     },
     {
       "name": "Mupen64Plus",
-      "launch": "mupen64plus.sh"
+      "launch": "../._/mupen64plus.sh"
     },
     {
       "name": "Mupen64Plus (16:9)",
-      "launch": "mupen64plus_wide.sh"
+      "launch": "../._/mupen64plus_wide.sh"
     },
     {
       "name": "-------------  standalone  -------------",
       "launch": ""
     },
     {
-      "name": "Mupen64Plus (glide64mk2)",
-      "launch": "mupen64plus_standalone.sh"
+      "name": "Mupen64Plus (Glide64mk2)",
+      "launch": "../._/mupen64plus_standalone.sh"
     },
     {
-      "name": "Mupen64Plus (glide64mk2 - 16:9)",
-      "launch": "mupen64plus_standalone.sh"
+      "name": "Mupen64Plus (Glide64mk2 - 16:9)",
+      "launch": "../._/mupen64plus_standalone.sh"
     },
     {
       "name": "Mupen64Plus (Rice)",
-      "launch": "mupen64plus_standalone.sh"
+      "launch": "../._/mupen64plus_standalone.sh"
     }
   ]
 }

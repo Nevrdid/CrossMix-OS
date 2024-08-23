@@ -12,12 +12,12 @@
   "extlist": "scummvm|squashfs|launch",
   "launchlist": [
     {
-      "name": "ScummVM 2.8",
-      "launch": "scummvm-2.8.sh"
+      "name": "ScummVM 2.8 (Libretro)",
+      "launch": "../._/scummvm-2.8.sh"
     },
     {
-      "name": "ScummVM 2.9",
-      "launch": "scummvm-2.9.sh"
+      "name": "ScummVM 2.9 (Libretro)",
+      "launch": "../._/scummvm-2.9.sh"
     }
   ]
 }

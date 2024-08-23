@@ -1,1 +1,0 @@
-default=MAME - default(0.259)

@@ -14,16 +14,16 @@
   "extlist": "sh",
   "launchlist": [
     {
-      "name": "Battery Saver",
-      "launch": "ports.sh"
+      "name": "Balanced",
+      "launch": "../._/ports.sh"
     },
     {
-      "name": "Balanced",
-      "launch": "ports.sh"
+      "name": "Battery Saver",
+      "launch": "../._/ports.sh"
     },
     {
       "name": "High Performance",
-      "launch": "ports.sh"
+      "launch": "../._/ports.sh"
     }
   ]
 }

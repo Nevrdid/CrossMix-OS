@@ -1,11 +1,3 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
-source /mnt/SDCARD/System/usr/trimui/scripts/launchers/common_launcher.sh
-cpufreq.sh conservative 0 6
-
-cd "$RA_DIR"
-
-#disable netplay
-NET_PARAM=
-
-HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L .retroarch/cores/puae2021_libretro.so "$@"
+source /mnt/SDCARD/System/usr/trimui/scripts/launchers/load_launcher.sh

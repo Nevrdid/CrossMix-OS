@@ -8,5 +8,11 @@
   "imgpath": "../../Imgs/INTELLIVISION",
   "useswap": 0,
   "shortname": 0,
-  "hidebios": 0
+  "hidebios": 0,
+  "launchlist": [
+    {
+      "name": "Freeintv (Libretro)",
+      "launch": "../._/freeintv.sh"
+    }
+  ]
 }

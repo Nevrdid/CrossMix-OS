@@ -14,20 +14,20 @@
   "extlist": "cue|img|mdf|pbp|toc|cbn|m3u|chd",
   "launchlist": [
     {
-      "name": "PCSX-ReArmed",
-      "launch": "pcsx.sh"
+      "name": "PCSX-ReArmed (Libretro)",
+      "launch": "../._/pcsx_rearmed.sh"
     },
     {
-      "name": "Duckstation",
-      "launch": "duckstation.sh"
+      "name": "Duckstation (Libretro)",
+      "launch": "../._/duckstation.sh"
     },
     {
-      "name": "SwanStation",
-      "launch": "swanstation.sh"
+      "name": "SwanStation (Libretro)",
+      "launch": "../._/swanstation.sh"
     },
     {
-      "name": "SwanStation 16:9",
-      "launch": "swanstation_wide.sh"
+      "name": "SwanStation (Libretro) (16:9)",
+      "launch": "../._/swanstation_wide.sh"
     }
   ]
 }

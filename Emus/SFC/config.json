@@ -12,24 +12,24 @@
   "hidebios": 1,
   "launchlist": [
     {
-      "name": "SNES9x",
-      "launch": "snes9x.sh"
+      "name": "SNES9x (Libretro)",
+      "launch": "../._/snes9x.sh"
     },
     {
-      "name": "SNES9X2002",
-      "launch": "snes9x2002.sh"
+      "name": "SNES9X2002 (Libretro)",
+      "launch": "../._/snes9x2002.sh"
     },
     {
-      "name": "SNES9X2005",
-      "launch": "snes9x2005.sh"
+      "name": "SNES9X2005 (Libretro)",
+      "launch": "../._/snes9x2005.sh"
     },
     {
-      "name": "Beetle Supafaust",
-      "launch": "supafaust.sh"
+      "name": "Mednafen Supafaust (Libretro)",
+      "launch": "../._/mednafen_supafaust.sh"
     },
     {
-      "name": "ChimeraSNES",
-      "launch": "chimerasnes.sh"
+      "name": "ChimeraSNES (Libretro)",
+      "launch": "../._/chimerasnes.sh"
     }
   ]
 }

@@ -10,5 +10,11 @@
   "imgpath": "../../Imgs/COLECO",
   "useswap": 1,
   "shortname": 0,
-  "hidebios": 1
+  "hidebios": 1,
+  "launchlist": [
+    {
+      "name": "Bluemsx (Libretro)",
+      "launch": "../._/bluemsx.sh"
+    }
+  ]
 }

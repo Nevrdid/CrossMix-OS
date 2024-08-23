@@ -14,16 +14,16 @@
   "extlist": "gen|smd|md|32x|bin|iso|sms|68k|chd|zip|7z",
   "launchlist": [
     {
-      "name": "PicoDrive",
-      "launch": "picodrive.sh"
+      "name": "PicoDrive (Libretro)",
+      "launch": "../._/picodrive.sh"
     },
     {
-      "name": "GenesisPlusGX",
-      "launch": "genplus.sh"
+      "name": "GenesisPlusGX (Libretro)",
+      "launch": "../._/genesis_plus_gx.sh"
     },
     {
-      "name": "GenesisPlusGX Wide",
-      "launch": "genplus_wide.sh"
+      "name": "GenesisPlusGX (Libretro) (16:9)",
+      "launch": "../._/genesis_plus_gx_wide.sh"
     }
   ]
 }

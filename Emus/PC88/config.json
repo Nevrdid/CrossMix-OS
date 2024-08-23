@@ -11,5 +11,11 @@
   "useswap": 1,
   "shortname": 1,
   "hidebios": 1,
-  "extlist": "zip|d88"
+  "extlist": "zip|d88",
+  "launchlist": [
+    {
+      "name": "Quasi88 (Libretro)",
+      "launch": "../._/quasi88.sh"
+    }
+  ]
 }

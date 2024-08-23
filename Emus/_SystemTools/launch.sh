@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ash
 echo $0 $*
 
 echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor

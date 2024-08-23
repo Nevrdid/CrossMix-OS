@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ash
 extension="${@##*.}"
 
 if [ "$extension" = "launch" ]; then
@@ -9,7 +9,7 @@ fi
 source /mnt/SDCARD/System/usr/trimui/scripts/launchers/common_launcher.sh
 cpufreq.sh conservative 0 6
 
-/mnt/SDCARD/Apps/PortMaster/PortMaster/gptokeyb2 -1 "mpv" -c "keys.gptk" &
+"$PM_DIR"/gptokeyb2 -1 "mpv" -c "keys.gptk" &
 sleep 0.4
 
 echo 1 > /tmp/stay_awake

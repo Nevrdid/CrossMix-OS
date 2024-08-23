@@ -1,10 +1,8 @@
-#!/bin/sh
+#!/bin/ash
 source /mnt/SDCARD/System/usr/trimui/scripts/launchers/common_launcher.sh
-cpufreq.sh ondemand 7 7
+cpufreq.sh ondemand 3 6
 
 
-#disable netplay
-NET_PARAM=
-
-cd "$RA_DIR"
-HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L .retroarch/cores/yabasanshiro_libretro.so "$@"
+cd $STD_DIR/.local/share/ppsspp_1.17.1
+export SDL_AUDIODRIVER=dsp
+HOME="$PWD" ./PPSSPPSDL_1.17.1_gl "$*"

@@ -11,5 +11,11 @@
   "useswap": 1,
   "shortname": 1,
   "hidebios": 1,
-  "extlist": "zip"
+  "extlist": "zip",
+  "launchlist": [
+    {
+      "name": "MAME2023plus 0.78 (Libretro)",
+      "launch": "../._/mame2003_plus.sh"
+    }
+  ]
 }

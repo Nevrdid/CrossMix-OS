@@ -9,5 +9,11 @@
   "useswap": 0,
   "shortname": 0,
   "hidebios": 0,
-  "extlist": "nes|fds|unf|unif|7z|zip"
+  "extlist": "nes|fds|unf|unif|7z|zip",
+  "launchlist": [
+    {
+      "name": "FCEUMM (Libretro)",
+      "launch": "../._/fceumm.sh"
+    }
+  ]
 }

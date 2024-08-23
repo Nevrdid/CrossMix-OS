@@ -15,12 +15,12 @@
   "extlist": "zip|7z|neo",
   "launchlist": [
     {
-      "name": "FB NEO",
-      "launch": "finalburn.sh"
+      "name": "FB Neo (Libretro)",
+      "launch": "../._/neogeo.sh"
     },
     {
-      "name": "FB ALPHA 2012",
-      "launch": "finalburn.sh"
+      "name": "FB Alpha 2012 (Libretro)",
+      "launch": "../._/neogeo.sh"
     }
   ]
 }

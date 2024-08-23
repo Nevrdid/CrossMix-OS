@@ -13,12 +13,12 @@
   "extlist": "zip",
   "launchlist": [
     {
-      "name": "FB NEO",
-      "launch": "FBNEO.sh"
+      "name": "FB Neo (Libretro)",
+      "launch": "../._/fbneo.sh"
     },
     {
-      "name": "FB Alpha",
-      "launch": "FBAlpha.sh"
+      "name": "FB Alpha (Libretro)",
+      "launch": "../._/fba.sh"
     }
   ]
 }

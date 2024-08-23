@@ -1,1 +1,0 @@
-default=FB ALPHA 2012
