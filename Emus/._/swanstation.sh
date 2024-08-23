@@ -7,7 +7,6 @@ if ! find "/mnt/SDCARD/BIOS" -maxdepth 1 -iname "scph*" -o -iname "psxonpsp660.b
 	infoscreen.sh -i bg-exit.png -m "No bios found, SwanStation will probably not work." -k " "
 fi
 
-#disable netplay
 NET_PARAM=
 
 cd "$RA_DIR"

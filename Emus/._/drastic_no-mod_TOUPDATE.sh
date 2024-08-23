@@ -4,5 +4,4 @@ cpufreq.sh ondemand 0 6
 
 cd "$STD_DIR/Drastic"
 
-#export SDL_AUDIODRIVER=dsp
 HOME="$PWD" ./drastic "$*"

@@ -15,5 +15,4 @@ echo $launcher_call | grep -qi "Vulkan" && set_backend 3 && back=vulkan || set_b
 
 cd $STD_DIR/.local/share/ppsspp_1.17.1
 
-#export SDL_AUDIODRIVER=dsp   //disable 20231031 for sound suspend issue
 HOME="$PWD" PPSSPPSDL_1.17.1_$back "$*"

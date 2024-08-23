@@ -17,8 +17,3 @@ esac
 
 HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L "$CORE_PATH" "$@"
 
-#HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L .retroarch/cores/fbalpha2012_neogeo_libretro.so "$@"
-#HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L $EMU_DIR/fbalpha2012_neogeo_libretro.so "$@"
-#HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L $EMU_DIR/fbalpha2012_libretro.so "$@"
-#HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L .retroarch/cores/geolith_libretro.so "$@"
-#HOME="$PWD" $RA_DIR/retroarch -v $NET_PARAM -L $EMU_DIR/fbalpha2012_neogeo_libretro.so "$@"

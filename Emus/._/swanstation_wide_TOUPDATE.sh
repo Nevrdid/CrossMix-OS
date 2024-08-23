@@ -8,28 +8,22 @@ if ! find "/mnt/SDCARD/BIOS" -maxdepth 1 -iname "scph*" -o -iname "psxonpsp660.b
 	infoscreen.sh -i bg-exit.png -m "No bios found, SwanStation will probably not work." -k " "
 fi
 
-#disable netplay
 NET_PARAM=
 
 cd $PWD/.retroarch/config/SwanStation
 
-# Extract the filename from the full path without the extension
 ROM_PATH="$1"
 ROM_NAME=$(basename "$ROM_PATH" | sed 's/\.[^.]*$//')
 
-# Paths to the source files
 PS_CFG="$PWD/PS.cfg"
 PS_OPT="$PWD/PS.opt"
 
-# Paths to the destination files
 ROM_CFG="$PWD/$ROM_NAME.cfg"
 ROM_OPT="$PWD/$ROM_NAME.opt"
 
-# Create empty files if the source files do not exist
 [ ! -f "$PS_CFG" ] && touch "$PS_CFG"
 [ ! -f "$PS_OPT" ] && touch "$PS_OPT"
 
-# Check if the destination files exist
 if [ ! -f "$ROM_CFG" ] && [ ! -f "$ROM_OPT" ]; then
 	# Copy the configuration files with the new name
 	cp "$PS_CFG" "$ROM_CFG"

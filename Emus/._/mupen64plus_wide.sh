@@ -4,28 +4,21 @@ cpufreq.sh ondemand 5 7
 
 cd "$RA_DIR"
 
-#disable netplay
 NET_PARAM=
 
-# Variable for the path to the Mupen64Plus directory
 cd .retroarch/config/Mupen64Plus\ GLES2
 
-# Extract the filename from the full path without the extension
 ROM_NAME=$(basename "$1" | sed 's/\.[^.]*$//')
 
-# Paths to the source files
 N64_CFG="$PWD/N64.cfg"
 N64_OPT="$PWD/Mupen64Plus GLES2.opt"
 
-# Paths to the destination files
 ROM_CFG="$PWD/$ROM_NAME.cfg"
 ROM_OPT="$PWD/$ROM_NAME.opt"
 
-# Create empty files if the source files do not exist
 [ ! -f "$N64_CFG" ] && touch "$N64_CFG"
 [ ! -f "$N64_OPT" ] && touch "$N64_OPT"
 
-# Check if the destination files exist
 if [ ! -f "$ROM_CFG" ] && [ ! -f "$ROM_OPT" ]; then
 	# Copy the configuration files with the new name
 	cp "$N64_CFG" "$ROM_CFG"

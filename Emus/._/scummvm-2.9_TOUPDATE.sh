@@ -24,7 +24,6 @@ if [ "$romName" = "° Import ScummVM Games.launch" ]; then
 	exit
 fi
 
-#disable netplay
 NET_PARAM=
 
 cd "$RA_DIR"

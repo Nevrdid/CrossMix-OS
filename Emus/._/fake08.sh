@@ -10,7 +10,6 @@ if [ "$romNameNoExtension" = "° Run Splore" ]; then
 	exit
 fi
 
-#disable netplay
 NET_PARAM=
 
 cd "$RA_DIR"

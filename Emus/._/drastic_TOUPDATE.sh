@@ -6,5 +6,4 @@ cd "$STD_DIR/Drastic"
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH:+$LD_LIBRARY_PATH:}$PWD/lib"
 export LD_PRELOAD="./libSDL2-2.0.so.0.2600.1"
 
-#export SDL_AUDIODRIVER=dsp
 HOME="$PWD" ./drastic "$*"

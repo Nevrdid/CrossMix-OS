@@ -15,5 +15,4 @@ echo $launcher_call | grep -qi "Perf." && cpufreq.sh ondemand 3 8 || cpufreq.sh 
 
 cd $STD_DIR/.local/share/ppsspp_1.15.4
 
-#export SDL_AUDIODRIVER=dsp   //disable 20231031 for sound suspend issue
 PPSSPPSDL_1.15.4 "$*"

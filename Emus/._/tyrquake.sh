@@ -4,7 +4,6 @@ cpufreq.sh conservative 0 6
 
 
 
-#disable netplay
 NET_PARAM=
 
 cd "$RA_DIR"

@@ -15,12 +15,10 @@ esac
 
 cd /mnt/SDCARD/Roms/PORTS
 
-################ Fix for TSP controls ################
 
 FILE="$@"
 LINE_TO_ADD="sleep 0.3 # For TSP only, do not move/modify this line."
 
-# Check if the line already exists
 if ! grep -q "$LINE_TO_ADD" "$FILE"; then
     # Use awk to insert the line after the target line only if it doesn't already exist
     awk -v line="$LINE_TO_ADD" '
@@ -38,6 +36,5 @@ if ! grep -q "$LINE_TO_ADD" "$FILE"; then
 fi
 sync
 
-######################################################
 
 /bin/ash "$@"

@@ -4,29 +4,23 @@ cpufreq.sh performance 7 7
 
 ./effect.sh
 
-#disable netplay
 NET_PARAM=
 
 cd "$RA_DIR"
 
 cd ".retroarch/config/Flycast"
 
-# Extract the filename from the full path without the extension
 ROM_NAME=$(basename "$1" | sed 's/\.[^.]*$//')
 
-# Paths to the source files
 DC_CFG="$PWD/DC.cfg"
 DC_OPT="$PWD/DC.opt"
 
-# Paths to the destination files
 ROM_CFG="$PWD/$ROM_NAME.cfg"
 ROM_OPT="$PWD/$ROM_NAME.opt"
 
-# Create empty files if the source files do not exist
 [ ! -f "$DC_CFG" ] && touch "$DC_CFG"
 [ ! -f "$DC_OPT" ] && touch "$DC_OPT"
 
-# Check if the destination files exist
 if [ ! -f "$ROM_CFG" ] && [ ! -f "$ROM_OPT" ]; then
 	# Copy the configuration files with the new name
 	cp "$DC_CFG" "$ROM_CFG"

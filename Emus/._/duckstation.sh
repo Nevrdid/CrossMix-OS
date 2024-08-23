@@ -8,7 +8,6 @@ if ! find "/mnt/SDCARD/BIOS" -maxdepth 1 -iname "scph*" -o -iname "psxonpsp660.b
 fi
 
 
-#disable netplay
 NET_PARAM=
 
 cd "$RA_DIR"

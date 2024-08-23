@@ -6,7 +6,6 @@ $EMU_DIR/performance.sh
 
 cd "$RA_DIR"
 
-#disable netplay
 NET_PARAM=
 
 HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L .retroarch/cores/gearcoleco_libretro.so "$@"

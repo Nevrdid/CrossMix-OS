@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ash
 echo $0 $*
 source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
 
@@ -11,7 +11,6 @@ romNameNoExtension=${romname%.*}
 $EMU_DIR/performance.sh
 
 
-#disable netplay
 NET_PARAM=
 
 cd $RA_DIR/

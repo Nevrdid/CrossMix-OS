@@ -5,7 +5,6 @@ cpufreq.sh performance 7 7
 ./effect.sh
 
 
-#disable netplay
 NET_PARAM=
 
 cd "$RA_DIR"
