@@ -1,9 +1,10 @@
-subdir_count=$(echo "$1" | awk -F'/Roms/' '{print $2}' | awk -F'/' '{print NF-1}') # Count the number of slashes in the rest of the path
+ending_path=$(echo "$1" | awk -F'/Roms/' '{print $2}' )
+subdir_count=$(echo "$ending_path" | awk -F'/' '{print NF-1}') # Count the number of slashes in the rest of the path
 
 if [ "$subdir_count" -gt 1 ]; then
     if [ -z "$2" ]; then # the override config file is not already defined
         echo "############### Folder Overrride Finder ###############"
-        first_subdir=$(echo "$1" | awk -F'/Roms/' '{print $2}' | cut -d'/' -f1) # Use awk to extract the part of the path after "/mnt/SDCARD/Roms/" to the next "/".
+        first_subdir=$(echo "$ending_path" | cut -d'/' -f1) # Use awk to extract the part of the path after "/mnt/SDCARD/Roms/" to the next "/".
         echo "Subdirectory from $first_subdir detected !"
 
         # We try to find the config folder :
