@@ -2,7 +2,7 @@
 display_name = "Arcade (MAME 2015)"
 authors = "MAMEdev"
 supported_extensions = "zip|chd|7z|cmd"
-corename = "MAME 2015 (0.160)"
+corename = "MAME 2015"
 license = "MAME"
 permissions = ""
 display_version = "0.160"

@@ -2,10 +2,10 @@
 display_name = "PICO-8 (Retro8)"
 authors = "jakz"
 supported_extensions = "p8|png"
-corename = "Retro8"
+corename = "retro-8 (alpha)"
 license = "GPLv3"
 permissions = ""
-display_version = "Git"
+display_version = "0.1b"
 categories = "Emulator"
 
 # Hardware Information

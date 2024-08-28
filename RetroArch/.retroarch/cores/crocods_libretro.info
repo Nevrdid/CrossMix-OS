@@ -2,11 +2,11 @@
 display_name = "Amstrad - CPC (CrocoDS)"
 authors = "RedBug"
 supported_extensions = "dsk|sna|kcr"
-corename = "CrocoDS"
+corename = "crocods"
 categories = "Emulator"
 license = "MIT"
 permissions = ""
-display_version = "v1"
+display_version = "git f1b4b91"
 
 # Hardware Information
 manufacturer = "Amstrad"

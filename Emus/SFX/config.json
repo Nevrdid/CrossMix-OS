@@ -10,5 +10,11 @@
   "imgpath": "../../Imgs/SFX",
   "useswap": 1,
   "shortname": 0,
-  "hidebios": 1
+  "hidebios": 1,
+  "launchlist": [
+    {
+      "name": "Mednafen Supergrafx (Libretro)",
+      "launch": "../._/mednafen_supergrafx.sh"
+    }
+  ]
 }

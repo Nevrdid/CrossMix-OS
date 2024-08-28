@@ -10,5 +10,11 @@
   "imgpath": "../../Imgs/CAVESTORY",
   "useswap": 1,
   "shortname": 0,
-  "hidebios": 1
+  "hidebios": 1,
+  "launchlist": [
+    {
+      "name": "Nxengine (Libretro)",
+      "launch": "../._/nxengine.sh"
+    }
+  ]
 }

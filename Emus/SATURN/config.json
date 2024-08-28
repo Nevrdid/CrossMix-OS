@@ -10,5 +10,31 @@
   "imgpath": "../../Imgs/SATURN",
   "useswap": 1,
   "shortname": 0,
-  "hidebios": 1
+  "hidebios": 1,
+  "launchlist": [
+     {
+      "name": "-----------  libretro  -----------",
+      "launch": ""
+    },
+    {
+      "name": "Yabasanshiro",
+      "launch": "../._/yabasanshiro.sh"
+    },
+    {
+      "name": "-----------  standalone  -----------",
+      "launch": ""
+    },
+    {
+      "name": "Yabasanshiro (Real BIOS)",
+      "launch": "../._/yabasanshiro_standalone.sh"
+    },
+    {
+      "name": "Yabasanshiro (GameNavi BIOS)",
+      "launch": "../._/yabasanshiro_standalone.sh"
+    },
+    {
+      "name": "Yabasanshiro (HLE BIOS)",
+      "launch": "../._/yabasanshiro_standalone.sh"
+    }
+  ]
 }

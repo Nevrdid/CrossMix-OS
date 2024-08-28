@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ash
 
 echo $0 $*
 export LD_LIBRARY_PATH="/mnt/SDCARD/System/lib:/usr/trimui/lib:$LD_LIBRARY_PATH"

@@ -5,7 +5,7 @@ supported_extensions = "cue|ccd|toc|chd"
 corename = "Beetle PC-FX"
 license = "GPLv2"
 permissions = ""
-display_version = "v0.9.33.3"
+display_version = "v1.9.36.5"
 categories = "Emulator"
 
 # Hardware Information

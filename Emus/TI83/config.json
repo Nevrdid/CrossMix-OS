@@ -11,5 +11,11 @@
   "useswap": 1,
   "shortname": 1,
   "hidebios": 1,
-  "extlist": "zip|83p|83P"
+  "extlist": "zip|83p|83P",
+  "launchlist": [
+    {
+      "name": "Numera (Libretro)",
+      "launch": "../._/numero.sh"
+    }
+  ]
 }

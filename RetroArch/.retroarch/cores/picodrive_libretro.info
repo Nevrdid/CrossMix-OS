@@ -5,7 +5,7 @@ supported_extensions = "bin|gen|gg|smd|pco|md|32x|chd|cue|iso|sms|68k|sgd|m3u"
 corename = "PicoDrive"
 license = "MAME"
 permissions = "dynarec_optional"
-display_version = "1.99"
+display_version = "2.00"
 categories = "Emulator"
 
 # Hardware Information

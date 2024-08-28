@@ -10,5 +10,11 @@
   "imgpath": "../../Imgs/CPET",
   "useswap": 1,
   "shortname": 0,
-  "hidebios": 1
+  "hidebios": 1,
+  "launchlist": [
+    {
+      "name": "Vice_xpet (Libretro)",
+      "launch": "../._/vice_xpet.sh"
+    }
+  ]
 }

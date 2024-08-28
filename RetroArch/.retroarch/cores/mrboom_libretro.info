@@ -6,7 +6,7 @@ categories = "Game"
 license = "MIT"
 supported_extensions = "desktop"
 permissions = ""
-display_version = "3.1"
+display_version = "4.9"
 
 # Hardware Information
 systemname = "Mr.Boom"

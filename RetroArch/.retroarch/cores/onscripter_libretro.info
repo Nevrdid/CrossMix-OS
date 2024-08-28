@@ -6,6 +6,7 @@ categories = "Game engine"
 license = "GPLv3+"
 permissions = ""
 supported_extensions = "txt|dat|___"
+corename - "onscripter"
 
 # Hardware Information
 manufacturer = "ONScripter"

@@ -5,7 +5,7 @@ supported_extensions = "elf|iso|cso|prx|pbp"
 corename = "PPSSPP"
 license = "GPLv2"
 permissions = ""
-display_version = "Git"
+display_version = "1.16.6-456"
 categories = "Emulator"
 
 # Hardware Information

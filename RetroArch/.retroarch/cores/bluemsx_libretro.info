@@ -6,7 +6,7 @@ corename = "blueMSX"
 categories = "Emulator"
 license = "GPLv2"
 permissions = ""
-display_version = "SVN"
+display_version = "git e21bf74"
 
 # Hardware Information
 manufacturer = "Spectravideo|Philips|Al Alamiah|Sony|Sanyo|Mitsubishi|Toshiba|Hitachi|Panasonic|Canon|Casio|Pioneer|Fujitsu|Yamaha|JVC|Kyocera|GoldStar|Samsung|Daewoo|Gradiente|Sharp|Talent|NTT|ACVS/CIEL|DDX|AGE Labs"

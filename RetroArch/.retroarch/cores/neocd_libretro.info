@@ -4,7 +4,7 @@ authors = "Elta"
 supported_extensions = "cue|chd"
 corename = "NeoCD"
 license = "LGPLv3"
-display_version = "2019"
+display_version = "2021"
 categories = "Emulator"
 
 # Hardware Information

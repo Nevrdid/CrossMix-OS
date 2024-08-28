@@ -2,7 +2,7 @@
 display_name = "Nintendo - Game Boy Advance (Meteor)"
 authors = "Philippe Daouadi"
 supported_extensions = "gba"
-corename = "Meteor"
+corename = "Meteor GBA"
 categories = "Emulator"
 license = "GPLv3"
 permissions = ""

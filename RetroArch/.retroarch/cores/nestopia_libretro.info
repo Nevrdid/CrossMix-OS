@@ -6,7 +6,7 @@ corename = "Nestopia"
 license = "GPLv2"
 permissions = ""
 categories = "Emulator"
-display_version = "1.51.1"
+display_version = "1.51.0"
 
 # Hardware Information
 manufacturer = "Nintendo"

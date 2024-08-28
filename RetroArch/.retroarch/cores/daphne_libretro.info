@@ -6,7 +6,7 @@ corename = "Daphne"
 categories = "Emulator"
 license = "GPLv2+"
 permissions = ""
-display_version = "Git"
+display_version = "Git 0258e2d"
 
 # Hardware Information
 manufacturer = "Various"

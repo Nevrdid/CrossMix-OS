@@ -14,7 +14,7 @@ systemid = "playstation"
 
 # Libretro Features
 database = "Sony - PlayStation"
-display_version = "v0.1"
+display_version = "1.0.0"
 supports_no_game = "false"
 hw_render = "true"
 required_hw_api = "OpenGL >= 3.0 | OpenGL Core >= 3.1 | Vulkan >= 1.0 | Direct3D >= 11.0"

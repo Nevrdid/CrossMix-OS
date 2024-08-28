@@ -6,7 +6,7 @@
   "effectsh": "effect.sh",
   "background": "/mnt/SDCARD/Backgrounds/Default/DC.png",
   "themecolor": "FFFFFF",
-  "launch": "flycast.sh",
+  "launch": "launch.sh",
   "rompath": "../../Roms/DC",
   "imgpath": "../../Imgs/DC",
   "useswap": 1,
@@ -15,15 +15,15 @@
   "launchlist": [
     {
       "name": "Flycast (Libretro)",
-      "launch": "flycast.sh"
+      "launch": "../._/flycast.sh"
     },
     {
       "name": "Flycast (Libretro) (16:9)",
-      "launch": "flycast_wide.sh"
+      "launch": "../._/flycast_wide.sh"
     },
     {
       "name": "Flycast (Standalone)",
-      "launch": "flycast_standalone.sh"
+      "launch": "../._/flycast_standalone.sh"
     }
   ]
 }

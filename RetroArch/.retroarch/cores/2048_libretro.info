@@ -6,7 +6,7 @@ corename = "2048"
 categories = "Game"
 license = "Public Domain"
 permissions = ""
-display_version = "1.0"
+display_version = "v1.0"
 
 # Hardware Information
 systemname = "2048 Game Clone"

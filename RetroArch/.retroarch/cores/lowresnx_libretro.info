@@ -2,11 +2,11 @@
 display_name = "LowRes NX"
 authors = "timoinutilis"
 supported_extensions = "nx"
-corename = "lowresnx"
+corename = "LowRes NX"
 categories = "Game engine"
 license = "zlib"
 permissions = ""
-display_version = "v1.2"
+display_version = "1.2"
 
 # Hardware Information
 manufacturer = "inutilis"

@@ -2,11 +2,11 @@
 display_name = "DOS (DOSBox-SVN)"
 authors = "DOSBox Team|radius"
 supported_extensions = "exe|com|bat|conf|cue|iso"
-corename = "DOSBox-SVN"
+corename = "DOSBox-pure"
 categories = "Emulator"
 license = "GPLv2"
 permissions = ""
-display_version = "SVN"
+display_version = "0.13 (SVN?)"
 
 # Hardware Information
 manufacturer = "Microsoft"

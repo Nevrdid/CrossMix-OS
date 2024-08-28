@@ -10,5 +10,11 @@
   "imgpath": "../../Imgs/TIC",
   "useswap": 1,
   "shortname": 0,
-  "hidebios": 1
+  "hidebios": 1,
+  "launchlist": [
+    {
+      "name": "TIC80 (Libretro)",
+      "launch": "../._/tic80.sh"
+    }
+  ]
 }

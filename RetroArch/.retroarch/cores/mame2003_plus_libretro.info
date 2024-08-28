@@ -5,7 +5,7 @@ supported_extensions = "zip"
 corename = "MAME 2003-Plus"
 license = "MAME Noncommercial"
 permissions = ""
-display_version = "2003-Plus"
+display_version = "Git 2a49b3cd33"
 categories = "Emulator"
 
 # Hardware Information

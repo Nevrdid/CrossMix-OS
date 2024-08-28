@@ -10,5 +10,11 @@
   "imgpath": "../../Imgs/ATARI5200",
   "useswap": 0,
   "shortname": 0,
-  "hidebios": 0
+  "hidebios": 0,
+  "launchlist": [
+    {
+      "name": "a5200 (Libretro)",
+      "launch": "../._/a5200.sh"
+    }
+  ]
 }

@@ -1,11 +1,11 @@
 # Software Information
-display_name = "Arcade (MAME - Current)"
+display_name = "Arcade (MAME - 0.219)"
 authors = "MAMEdev"
 supported_extensions = "zip|chd|7z|cmd"
-corename = "MAME (Git)"
+corename = "MAME"
 license = "GPLv2+"
 permissions = ""
-display_version = "Git"
+display_version = "0.219"
 categories = "Emulator"
 
 # Hardware Information

@@ -6,7 +6,7 @@ corename = "theodore"
 database = "Thomson - MOTO"
 license = "GPLv3"
 permissions = ""
-display_version = "Git"
+display_version = "v3.1-56"
 categories = "Emulator"
 
 # Hardware Information

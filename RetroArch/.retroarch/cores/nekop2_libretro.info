@@ -5,7 +5,7 @@ supported_extensions = "d98|zip|98d|fdi|fdd|2hd|tfd|d88|88d|hdm|xdf|dup|cmd|hdi|
 corename = "Neko Project II"
 license = "MIT"
 permissions = ""
-display_version = "0.86"
+display_version = "0.86+"
 
 # Hardware Information
 manufacturer = "NEC"

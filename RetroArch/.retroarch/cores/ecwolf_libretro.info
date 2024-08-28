@@ -1,7 +1,7 @@
 display_name = "Wolfenstein 3D (ECWolf)"
 authors = "Braden Obrzut"
 supported_extensions = "wl6|n3d|sod|sdm|wl1|pk3|exe"
-corename = "ECWolf"
+corename = "ecwolf"
 manufacturer = "Id Software"
 categories = "Game"
 systemname = "Wolfenstein 3D Game Engine"
@@ -9,6 +9,7 @@ systemid = "wolfenstein3d"
 database = "Wolfenstein 3D"
 license = "BSD|LGPL"
 permissions = ""
+display_version = "v0.01"
 
 # BIOS / Firmware
 firmware_count = 1

@@ -2,16 +2,16 @@
 display_name = "Multi (MESS 2015)"
 authors = "MAMEdev"
 supported_extensions = "zip|chd|7z"
-corename = "MESS 2015 (0.160)"
+corename = "MESS 2015"
 license = "MAME"
 permissions = ""
-display_version = "Git"
+display_version = "0.160"
 categories = "Emulator"
 
 # Hardware Information
 manufacturer = "Various"
 systemname = "Multi (various)"
-systemid = "mame"
+systemid = "mess"
 
 # Libretro Features
 supports_no_game = "false"

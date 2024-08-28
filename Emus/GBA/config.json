@@ -3,7 +3,7 @@
   "icon": "/mnt/SDCARD/Icons/Default/Emus/GBA.png",
   "background": "/mnt/SDCARD/Backgrounds/Default/GBA.png",
   "themecolor": "FF00FF",
-  "launch": "mgba.sh",
+  "launch": "launch.sh",
   "rompath": "../../Roms/GBA",
   "imgpath": "../../Imgs/GBA",
   "useswap": 0,
@@ -12,24 +12,24 @@
   "extlist": "bin|gba|agb|gbz|zip|7z",
   "launchlist": [
     {
-      "name": "mGBA",
-      "launch": "mgba.sh"
+      "name": "mGBA (Libretro)",
+      "launch": "../._/mgba.sh"
     },
     {
-      "name": "gpSP",
-      "launch": "gpsp.sh"
+       "name": "mGBA (Standalone)",
+       "launch": "../._/mgba_standalone.sh"
     },
     {
-      "name": "VBA-M",
-      "launch": "vbam.sh"
+      "name": "gpSP (Libretro)",
+      "launch": "../._/gpsp.sh"
     },
     {
-      "name": "VBA Next",
-      "launch": "vbanext.sh"
+      "name": "VBA-M (Libretro)",
+      "launch": "../._/vbam.sh"
     },
     {
-       "name": "mGBA - Standalone",
-       "launch": "mgba_standalone.sh"
+      "name": "VBA Next (Libretro)",
+      "launch": "../._/vbanext.sh"
     }
   ]
 }

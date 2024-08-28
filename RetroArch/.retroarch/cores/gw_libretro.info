@@ -2,11 +2,11 @@
 display_name = "Handheld Electronic (GW)"
 authors = "Andre Leiradella"
 supported_extensions = "mgw"
-corename = "GW"
+corename = "Game & Watch"
 categories = "Emulator"
 license = "zlib"
 permissions = ""
-display_version = "Git"
+display_version = "1.6.3"
 
 # Hardware Information
 manufacturer = "Various"

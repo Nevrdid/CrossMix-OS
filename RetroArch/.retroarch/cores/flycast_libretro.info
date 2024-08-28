@@ -6,7 +6,7 @@ corename = "Flycast"
 license = "GPLv2"
 permissions = ""
 categories = "Emulator"
-display_version = "Git"
+display_version = "0.1"
 
 # Hardware Information
 manufacturer = "Sega"

@@ -2,11 +2,11 @@
 display_name = "Rick Dangerous (XRick)"
 authors = ""
 supported_extensions = "zip"
-corename = "XRick"
+corename = "xrick"
 categories = "Game"
 license = "GPLv3"
 permissions = ""
-display_version = "1.0.0.6"
+display_version = "021212-dev"
 
 # Hardware Information
 systemname = "Rick Dangerous Game Engine"

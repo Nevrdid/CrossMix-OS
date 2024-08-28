@@ -5,7 +5,7 @@ supported_extensions = "gba"
 corename = "VBA Next"
 license = "GPLv2"
 permissions = ""
-display_version = "SVN"
+display_version = "v1.0.2"
 categories = "Emulator"
 
 # Hardware Information

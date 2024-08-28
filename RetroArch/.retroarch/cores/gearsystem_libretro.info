@@ -6,7 +6,7 @@ corename = "Gearsystem"
 categories = "Emulator"
 license = "GPLv3"
 permissions = ""
-display_version = "3.2.0"
+display_version = "3.4.2"
 
 # Hardware Information
 manufacturer = "Sega"

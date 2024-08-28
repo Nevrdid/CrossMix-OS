@@ -2,10 +2,10 @@
 display_name = "Philips - CDi (SAME CDi)"
 authors = "MAMEdev"
 supported_extensions = "chd|iso|cue"
-corename = "SAME CDi (Git)"
+corename = "SAME CDi"
 license = "GPLv2+"
 permissions = ""
-display_version = "Git"
+display_version = "???"
 categories = "Emulator"
 
 # Hardware Information

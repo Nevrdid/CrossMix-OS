@@ -2,7 +2,7 @@
 display_name = "Arduboy (Arduous)"
 authors = "James Roeder"
 supported_extensions = "hex"
-corename = "Arduous"
+corename = "arduous"
 license = "GPLv3"
 permissions = ""
 display_version = "0.1.0"

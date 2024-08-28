@@ -6,7 +6,7 @@ corename = "Craft"
 categories = "Game"
 license = "MIT"
 permissions = ""
-display_version = "v1"
+display_version = "v1.0-296"
 
 # Hardware Information
 manufacturer = "Microsoft"

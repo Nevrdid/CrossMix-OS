@@ -11,5 +11,11 @@
   "useswap": 1,
   "shortname": 0,
   "hidebios": 1,
-  "extlist": "map|aba|seq|lev"
+  "extlist": "map|aba|seq|lev",
+  "launchlist": [
+    {
+      "name": "Reminiscence (Libretro)",
+      "launch": "../._/reminiscence.sh"
+    }
+  ]
 }

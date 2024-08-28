@@ -6,7 +6,7 @@ corename = "FreeIntv"
 categories = "Emulator"
 license = "GPLv3"
 permissions = ""
-display_version = "2018.1.5"
+display_version = "1.2"
 
 # Hardware Information
 manufacturer = "Mattel"

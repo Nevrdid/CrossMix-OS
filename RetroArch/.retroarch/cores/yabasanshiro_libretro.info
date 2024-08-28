@@ -5,7 +5,7 @@ supported_extensions = "bin|ccd|chd|cue|iso|mds|zip"
 corename = "YabaSanshiro"
 license = "GPLv2"
 permissions = ""
-display_version = "v2.6.8"
+display_version = "v3.4.2"
 categories = "Emulator"
 
 # Hardware Information

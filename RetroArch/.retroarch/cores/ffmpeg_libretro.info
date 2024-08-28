@@ -7,7 +7,7 @@ categories = "Media player"
 systemname = "FFmpeg"
 license = "LGPLv2, GPLv2"
 permissions = ""
-display_version = "Git"
+display_version = "v1"
 
 # Libretro Features
 supports_no_game = "false"

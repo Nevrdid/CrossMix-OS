@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ash
 echo $0 $*
 
 PATH="/mnt/SDCARD/System/bin:$PATH"

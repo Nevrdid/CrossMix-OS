@@ -1,0 +1,203 @@
+[?25l[?1cPreference: opening /mnt/SDCARD/Standalones/.config/.yabasanshiro/Nights Into Dreams... (USA) (DW0453).chd.config
+Preference: getInt Resolution:3
+Preference: getInt Rotate screen resolution:0
+Preference: getInt Aspect rate:0
+Preference: getBool Rotate screen:0
+Preference: getBool Use compute shader:0
+current_mode 1280x720
+MALI_CreateWindow:0x55a64db870 done.
+context renderer string: "PowerVR Rogue GE8300"
+context vendor string: "Imagination Technologies"
+version string: "OpenGL ES 3.2 build 1.19@6345021"
+Extentions: GL_ANDROID_extension_pack_es31a GL_APPLE_texture_format_BGRA8888 GL_EXT_blend_minmax GL_EXT_buffer_storage GL_EXT_clear_texture GL_EXT_clip_control GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_conservative_depth GL_EXT_copy_image GL_EXT_discard_framebuffer GL_EXT_draw_buffers GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_EGL_image_array GL_EXT_float_blend GL_EXT_geometry_point_size GL_EXT_geometry_shader GL_EXT_gpu_shader5 GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_multi_draw_arrays GL_EXT_multisampled_render_to_texture GL_EXT_multisampled_render_to_texture2 GL_EXT_occlusion_query_boolean GL_EXT_polygon_offset_clamp GL_EXT_primitive_bounding_box GL_EXT_pvrtc_sRGB GL_EXT_read_format_bgra GL_EXT_robustness GL_EXT_separate_shader_objects GL_EXT_shader_framebuffer_fetch GL_EXT_shader_group_vote GL_EXT_shader_implicit_conversions GL_EXT_shader_io_blocks GL_EXT_shader_non_constant_global_initializers GL_EXT_shader_pixel_local_storage GL_EXT_shader_pixel_local_storage2 GL_EXT_shader_texture_lod GL_EXT_shadow_samplers GL_EXT_sparse_texture GL_EXT_sRGB GL_EXT_sRGB_write_control GL_EXT_tessellation_point_size GL_EXT_tessellation_shader GL_EXT_texture_border_clamp GL_EXT_texture_buffer GL_EXT_texture_cube_map_array GL_EXT_texture_format_BGRA8888 GL_EXT_texture_format_sRGB_override GL_EXT_texture_rg GL_EXT_texture_shadow_lod GL_EXT_texture_sRGB_decode GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_RG8 GL_EXT_texture_type_2_10_10_10_REV GL_EXT_unpack_subimage GL_EXT_YUV_target GL_IMG_framebuffer_downsample GL_IMG_multisampled_render_to_texture GL_IMG_program_binary GL_IMG_read_format GL_IMG_shader_binary GL_IMG_texture_compression_pvrtc GL_IMG_texture_compression_pvrtc2 GL_IMG_texture_format_BGRA8888 GL_IMG_texture_npot GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_debug GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_EGL_image GL_OES_EGL_sync GL_OES_element_index_uint GL_OES_fragment_precision_high GL_OES_geometry_point_size GL_OES_geometry_shader GL_OES_get_program_binary GL_OES_gpu_shader5 GL_OES_mapbuffer GL_OES_packed_depth_stencil GL_OES_required_internalformat GL_OES_rgb8_rgba8 GL_OES_sample_shading GL_OES_sample_variables GL_OES_shader_image_atomic GL_OES_shader_io_blocks GL_OES_shader_multisample_interpolation GL_OES_standard_derivatives GL_OES_surfaceless_context GL_OES_tessellation_point_size GL_OES_tessellation_shader GL_OES_texture_3D GL_OES_texture_border_clamp GL_OES_texture_buffer GL_OES_texture_cube_map_array GL_OES_texture_float GL_OES_texture_half_float GL_OES_texture_npot GL_OES_texture_stencil8 GL_OES_texture_storage_multisample_2d_array GL_OES_vertex_array_object GL_OES_vertex_half_float
+Added unconfigured joystick Xbox 360 Controller (GUID: 030003f05e0400008e02000014010000, instance ID: 0, device index: 0).
+{
+  "0_Xbox 360 Controller_030003f05e0400008e02000014010000": {
+    "a": {
+      "id": 0,
+      "type": "button",
+      "value": 1
+    },
+    "analogl": {
+      "id": 0,
+      "type": "axis",
+      "value": -1
+    },
+    "analogleft": {
+      "id": 4,
+      "type": "axis",
+      "value": 0
+    },
+    "analogr": {
+      "id": 0,
+      "type": "axis",
+      "value": 1
+    },
+    "analogright": {
+      "id": 5,
+      "type": "axis",
+      "value": 0
+    },
+    "analogx": {
+      "id": 0,
+      "type": "axis",
+      "value": -1
+    },
+    "analogy": {
+      "id": 1,
+      "type": "axis",
+      "value": -1
+    },
+    "b": {
+      "id": 1,
+      "type": "button",
+      "value": 1
+    },
+    "c": {
+      "id": 2,
+      "type": "button",
+      "value": 1
+    },
+    "down": {
+      "id": 0,
+      "type": "hat",
+      "value": 4
+    },
+    "l": {
+      "id": 2,
+      "type": "axis",
+      "value": 1
+    },
+    "left": {
+      "id": 0,
+      "type": "hat",
+      "value": 8
+    },
+    "r": {
+      "id": 5,
+      "type": "axis",
+      "value": 1
+    },
+    "right": {
+      "id": 0,
+      "type": "hat",
+      "value": 2
+    },
+    "select": {
+      "id": -1,
+      "type": "",
+      "value": -999
+    },
+    "start": {
+      "id": 7,
+      "type": "button",
+      "value": 1
+    },
+    "up": {
+      "id": 0,
+      "type": "hat",
+      "value": 1
+    },
+    "x": {
+      "id": 3,
+      "type": "button",
+      "value": 1
+    },
+    "y": {
+      "id": 4,
+      "type": "button",
+      "value": 1
+    },
+    "z": {
+      "id": 5,
+      "type": "button",
+      "value": 1
+    }
+  },
+  "player1": {
+    "DeviceID": 0,
+    "deviceGUID": "030003f05e0400008e02000014010000",
+    "deviceName": "Xbox 360 Controller",
+    "padmode": 0
+  }
+}
+
+select_device_ = 0, select_button_ = -1
+selguid = -1:0_Xbox 360 Controller_030003f05e0400008e02000014010000
+selguid = -1:BADGUID
+Preference: opening /mnt/SDCARD/Standalones/.config/.yabasanshiro/Nights Into Dreams... (USA) (DW0453).chd.config
+Preference: getInt Resolution:3
+Preference: getInt Aspect rate:0
+Preference: getInt Rotate screen resolution:0
+Preference: getBool Use compute shader:0
+Preference: getBool Rotate screen:0
+Preference: opening /mnt/SDCARD/Standalones/.config/.yabasanshiro/Nights Into Dreams... (USA) (DW0453).chd.config
+Preference: getInt Resolution:3
+Preference: getBool Rotate screen:0
+Preference: getInt Rotate screen resolution:0
+Preference: getBool Use compute shader:0
+GL_FRAMEBUFFER_BINDING = 0PG_NORMAL
+PG_VDP1_NORMAL
+PG_VFP1_GOURAUDSAHDING
+PG_VDP2_DRAWFRAMEBUFF --START--
+PG_VFP1_HALFTRANS
+PG_VFP1_SHADOW
+PG_VFP1_GOURAUDSAHDING_HALFTRANS
+PG_VFP1_HALF_LUMINANCE
+PG_VFP1_MESH
+PG_WINDOW
+PG_LINECOLOR_INSERT
+revoke thread
+use thread
+Preference: opening /mnt/SDCARD/Standalones/.config/.yabasanshiro/Nights Into Dreams... (USA) (DW0453).chd.config
+Preference: getInt Aspect rate:0
+Added unconfigured joystick Xbox 360 Controller (GUID: 030003f05e0400008e02000014010000, instance ID: 0, device index: 0).
+Vdp2DrawRotationThread
+revoke thread
+setCurrentInputDevices player1:0_Xbox 360 Controller_030003f05e0400008e02000014010000
+setCurrentInputDevices player2:Disable_-2
+imageid_:2 w:1280 h:720
+Preference: opening /mnt/SDCARD/Standalones/.config/.yabasanshiro/Nights Into Dreams... (USA) (DW0453).chd.config
+Preference: getInt Aspect rate:0
+use thread
+revoke thread
+setCurrentInputDevices player1:0_Xbox 360 Controller_030003f05e0400008e02000014010000
+setCurrentInputDevices player2:Disable_-2
+imageid_:3 w:1280 h:720
+Preference: opening /mnt/SDCARD/Standalones/.config/.yabasanshiro/Nights Into Dreams... (USA) (DW0453).chd.config
+Preference: getInt Aspect rate:0
+use thread
+revoke thread
+setCurrentInputDevices player1:0_Xbox 360 Controller_030003f05e0400008e02000014010000
+setCurrentInputDevices player2:Disable_-2
+imageid_:4 w:1280 h:720
+Xbox 360 Controller is selected
+onRawInputEvent deviceguid:0_Xbox 360 Controller_030003f05e0400008e02000014010000 type:axis id:5 val:-1
+onRawInputEvent deviceguid:0_Xbox 360 Controller_030003f05e0400008e02000014010000 type:axis id:5 val:-1
+onRawInputEvent deviceguid:0_Xbox 360 Controller_030003f05e0400008e02000014010000 type:axis id:5 val:-1
+onRawInputEvent deviceguid:0_Xbox 360 Controller_030003f05e0400008e02000014010000 type:axis id:5 val:-1
+onRawInputEvent deviceguid:0_Xbox 360 Controller_030003f05e0400008e02000014010000 type:axis id:5 val:-1
+Preference: opening /mnt/SDCARD/Standalones/.config/.yabasanshiro/Nights Into Dreams... (USA) (DW0453).chd.config
+Preference: getInt Aspect rate:0
+use thread
+revoke thread
+setCurrentInputDevices player1:0_Xbox 360 Controller_030003f05e0400008e02000014010000
+setCurrentInputDevices player2:Disable_-2
+imageid_:5 w:1280 h:720
+Preference: opening /mnt/SDCARD/Standalones/.config/.yabasanshiro/Nights Into Dreams... (USA) (DW0453).chd.config
+Preference: getInt Aspect rate:0
+use thread
+revoke thread
+setCurrentInputDevices player1:0_Xbox 360 Controller_030003f05e0400008e02000014010000
+setCurrentInputDevices player2:Disable_-2
+imageid_:6 w:1280 h:720
+onRawInputEvent deviceguid:0_Xbox 360 Controller_030003f05e0400008e02000014010000 type:axis id:5 val:-1
+Preference: opening /mnt/SDCARD/Standalones/.config/.yabasanshiro/Nights Into Dreams... (USA) (DW0453).chd.config
+Preference: getInt Aspect rate:0
+use thread
+revoke thread
+setCurrentInputDevices player1:0_Xbox 360 Controller_030003f05e0400008e02000014010000
+setCurrentInputDevices player2:Disable_-2
+imageid_:7 w:1280 h:720
+onRawInputEvent deviceguid:0_Xbox 360 Controller_030003f05e0400008e02000014010000 type:axis id:5 val:-1
+onRawInputEvent deviceguid:0_Xbox 360 Controller_030003f05e0400008e02000014010000 type:axis id:5 val:-1

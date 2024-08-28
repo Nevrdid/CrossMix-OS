@@ -5,7 +5,7 @@ supported_extensions = "n64|v64|z64|bin|u1"
 corename = "Mupen64Plus-Next"
 license = "GPLv2"
 permissions = "dynarec_optional"
-display_version = "1.0"
+display_version = "2.6-GLES3"
 categories = "Emulator"
 
 # Hardware Information

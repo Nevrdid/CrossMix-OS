@@ -6,7 +6,7 @@ corename = "DOSBox"
 categories = "Emulator"
 license = "GPLv2"
 permissions = ""
-display_version = "SVN"
+display_version = "0.74"
 
 # Hardware Information
 manufacturer = "Microsoft"

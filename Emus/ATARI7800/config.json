@@ -10,5 +10,11 @@
   "imgpath": "../../Imgs/ATARI7800",
   "useswap": 0,
   "shortname": 0,
-  "hidebios": 0
+  "hidebios": 0,
+  "launchlist": [
+    {
+      "name": "Prosystem (Libretro)",
+      "launch": "../._/prosystem.sh"
+    }
+  ]
 }

@@ -2,10 +2,10 @@
 display_name = "GCE - Vectrex (vecx)"
 authors = "Valavan Manohararajah|John Hawthorn|Nikita Zimin|Demeth"
 supported_extensions = "bin|vec"
-corename = "vecx"
+corename = "VecX"
 license = "GPLv3"
 permissions = ""
-display_version = "SVN"
+display_version = "1.2"
 categories = "Emulator"
 
 # Hardware Information

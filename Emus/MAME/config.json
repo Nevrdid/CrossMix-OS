@@ -3,7 +3,7 @@
   "icon": "/mnt/SDCARD/Icons/Default/Emus/MAME.png",
   "background": "/mnt/SDCARD/Backgrounds/Default/MAME.png",
   "themecolor": "00FF88",
-  "launch": "mame.sh",
+  "launch": "launch.sh",
   "rompath": "../../Roms/MAME",
   "imgpath": "../../Imgs/MAME",
   "useswap": 1,
@@ -12,24 +12,24 @@
   "hidebios": 1,
   "launchlist": [
     {
-      "name": "MAME - default(0.259)",
-      "launch": "mame.sh"
+      "name": "MAME2023 0.259 (Libretro)",
+      "launch": "../._/mame.sh"
     },
     {
-      "name": "MAME (0.219)",
-      "launch": "mame(0.219).sh"
+      "name": "MAME2020 0.219 (Libretro)",
+      "launch": "../._/mame219.sh"
     },
     {
-      "name": "MAME2000",
-      "launch": "mame2000.sh"
+      "name": "MAME2016 0.174 (Libretro)",
+      "launch": "../._/mame2016.sh"
     },
     {
-      "name": "MAME2015",
-      "launch": "mame2015.sh"
+      "name": "MAME2015 0.160 (Libretro)",
+      "launch": "../._/mame2015.sh"
     },
     {
-      "name": "MAME2016",
-      "launch": "mame2016.sh"
+      "name": "MAME2000 0.37 (Libretro)",
+      "launch": "../._/mame2000.sh"
     }
   ]
 }

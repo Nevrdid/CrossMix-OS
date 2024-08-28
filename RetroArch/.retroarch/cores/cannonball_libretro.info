@@ -6,7 +6,7 @@ corename = "Cannonball"
 categories = "Game engine"
 license = "Non-commercial"
 permissions = ""
-display_version = "1.0"
+display_version = "git unknown"
 
 # Hardware Information
 manufacturer = "Sega"

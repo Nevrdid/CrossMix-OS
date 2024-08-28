@@ -11,5 +11,11 @@
   "useswap": 1,
   "shortname": 1,
   "hidebios": 1,
-  "extlist": "zip|hdi"
+  "extlist": "zip|hdi",
+  "launchlist": [
+    {
+      "name": "Nekop2 (Libretro)",
+      "launch": "../._/nekop2.sh"
+    }
+  ]
 }

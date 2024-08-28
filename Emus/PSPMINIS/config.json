@@ -9,5 +9,15 @@
   "imgpath": "../../Imgs/PSPMINIS",
   "useswap": 0,
   "shortname": 0,
-  "hidebios": 0
+  "hidebios": 0,
+  "launchlist": [
+    {
+      "name": "PPSSPP 1.17.1 - OpenGL",
+      "launch": "../._/ppsspp_1.17.1.sh"
+    },
+    {
+      "name": "PPSSPP 1.17.1 - Vulkan",
+      "launch": "../._/ppsspp_1.17.1.sh"
+    }
+  ]
 }

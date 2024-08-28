@@ -2,7 +2,7 @@
   "label": "PSP",
   "label.ch.lang": "PSP",
   "icon": "/mnt/SDCARD/Icons/Default/Emus/PSP.png",
-  "launch": "launch_1.17.1_gl.sh",
+  "launch": "launch.sh",
   "background": "/mnt/SDCARD/Backgrounds/Default/PSP.png",
   "themecolor": "64A8BD",
   "iconsel": "",
@@ -15,17 +15,17 @@
     {
       "name": "PPSSPP 1.17.1 - OpenGL",
       "name.ch.lang": "PPSSPP正常模式",
-      "launch": "launch_1.17.1_gl.sh"
+      "launch": "../._/ppsspp_1.17.1.sh"
     },
     {
       "name": "PPSSPP 1.17.1 - Vulkan",
       "name.ch.lang": "PPSSPP性能模式",
-      "launch": "launch_1.17.1_vulkan.sh"
+      "launch": "../._/ppsspp_1.17.1.sh"
     },
     {
       "name": "PPSSPP-1.5.4",
       "name.ch.lang": "PPSSPP-1.5.4性能模式",
-      "launch": "launch_1.15.4.sh"
+      "launch": "../._/ppsspp_1.15.4.sh"
     },
     {
       "name": "---------------------------",
@@ -35,17 +35,17 @@
     {
       "name": "PPSSPP 1.17.1 - OpenGL - Perf.",
       "name.ch.lang": "PPSSPP正常模式 - Perf.",
-      "launch": "launch_1.17.1_gl.sh"
+      "launch": "../._/ppsspp_1.17.1.sh"
     },
 	{
       "name": "PPSSPP 1.17.1 - Vulkan - Perf.",
       "name.ch.lang": "PPSSPP性能模式 - Perf.",
-      "launch": "launch_1.17.1_vulkan.sh"
+      "launch": "../._/ppsspp_1.17.1.sh"
     },
     {
       "name": "PPSSPP-1.5.4 - Perf.",
       "name.ch.lang": "PPSSPP-1.5.4性能模式 - Perf.",
-      "launch": "launch_1.15.4.sh"
+      "launch": "../._/ppsspp_1.15.4.sh"
     }	
   ]
 }

@@ -7,5 +7,11 @@
   "useswap": 1,
   "shortname": 0,
   "hidebios": 0,
-  "extlist": "daphne"
+  "extlist": "daphne",
+  "launchlist": [
+    {
+      "name": "km_daphne_xtreme (Libretro)",
+      "launch": "../._/km_daphne_xtreme.sh"
+    }
+  ]
 }

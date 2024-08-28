@@ -1,10 +1,11 @@
 # Software Information
 display_name = "Uzebox (Uzem)"
 supported_extensions = "uze"
-corename = "uzem"
+corename = "Uzem"
 systemid = "uzebox"
 license = "MIT"
 categories = "Emulator"
+display_version = "v2.0"
 
 # Hardware Information
 manufacturer = "Uzebox"

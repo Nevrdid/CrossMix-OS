@@ -1,0 +1,438 @@
+[
+{
+	"label": "AMIGA",
+	"show": 0
+},
+{
+	"label": "AMIGA CD32",
+	"show": 0
+},
+{
+	"label": "AMIGA CDTV",
+	"show": 0
+},
+{
+	"label": "ARDUBOY",
+	"show": 0
+},
+{
+	"label": "ATARI 2600",
+	"show": 1
+},
+{
+	"label": "ATARI 5200",
+	"show": 0
+},
+{
+	"label": "ATARI 7800",
+	"show": 1
+},
+{
+	"label": "ATARI 800",
+	"show": 0
+},
+{
+	"label": "ATARIST",
+	"show": 0
+},
+{
+	"label": "ATOMISWAVE",
+	"show": 1
+},
+{
+	"label": "C64",
+	"show": 0
+},
+{
+	"label": "CANNONBALL",
+	"show": 0
+},
+{
+	"label": "CAVESTORY",
+	"show": 0
+},
+{
+	"label": "CHAILOVE",
+	"show": 0
+},
+{
+	"label": "CHANNELF",
+	"show": 0
+},
+{
+	"label": "COLECO",
+	"show": 0
+},
+{
+	"label": "COLSGM",
+	"show": 0
+},
+{
+	"label": "AMSTRAD CPC",
+	"show": 0
+},
+{
+	"label": "CPET",
+	"show": 0
+},
+{
+	"label": "CPLUS4",
+	"show": 0
+},
+{
+	"label": "CPS1",
+	"show": 1
+},
+{
+	"label": "CPS2",
+	"show": 1
+},
+{
+	"label": "CPS3",
+	"show": 1
+},
+{
+	"label": "Daphne",
+	"show": 0
+},
+{
+	"label": "SEGA DC",
+	"show": 1
+},
+{
+	"label": "DINOTHAWR",
+	"show": 0
+},
+{
+	"label": "DOOM",
+	"show": 0
+},
+{
+	"label": "DOS",
+	"show": 0
+},
+{
+	"label": "EASYRPG",
+	"show": 0
+},
+{
+	"label": "ENTERPRISE",
+	"show": 0
+},
+{
+	"label": "ARC. FBNEO",
+	"show": 1
+},
+{
+	"label": "N. NES",
+	"show": 1
+},
+{
+	"label": "N. FDS",
+	"show": 0
+},
+{
+	"label": "FLASHBACK",
+	"show": 0
+},
+{
+	"label": "N. GB",
+	"show": 1
+},
+{
+	"label": "N. GBA",
+	"show": 1
+},
+{
+	"label": "N. GBC",
+	"show": 1
+},
+{
+	"label": "SEGA GG",
+	"show": 1
+},
+{
+	"label": "GAME&WATCH",
+	"show": 1
+},
+{
+	"label": "INTELLIVISION",
+	"show": 0
+},
+{
+	"label": "LowRes NX",
+	"show": 0
+},
+{
+	"label": "LUTRO",
+	"show": 0
+},
+{
+	"label": "ATARI LYNX",
+	"show": 1
+},
+{
+	"label": "MAME",
+	"show": 1
+},
+{
+	"label": "ARC. MAME",
+	"show": 1
+},
+{
+	"label": "AR. MAME2010",
+	"show": 0
+},
+{
+	"label": "SEGA MD",
+	"show": 1
+},
+{
+	"label": "SEGA MD MSU",
+	"show": 0
+},
+{
+	"label": "MEGADUCK",
+	"show": 0
+},
+{
+	"label": "SEGA MS",
+	"show": 1
+},
+{
+	"label": "MSX",
+	"show": 0
+},
+{
+	"label": "MSX 2",
+	"show": 0
+},
+{
+	"label": " MUSIC",
+	"show": 0
+},
+{
+	"label": "N. N64",
+	"show": 1
+},
+{
+	"label": "N. N64DD",
+	"show": 0
+},
+{
+	"label": "NAOMI",
+	"show": 0
+},
+{
+	"label": "N. NDS",
+	"show": 1
+},
+{
+	"label": "NEOCD",
+	"show": 0
+},
+{
+	"label": "NEOGEO",
+	"show": 1
+},
+{
+	"label": "NGC",
+	"show": 0
+},
+{
+	"label": "NGP",
+	"show": 1
+},
+{
+	"label": "OpenBOR",
+	"show": 0
+},
+{
+	"label": "PALMOS",
+	"show": 0
+},
+{
+	"label": "3DO",
+	"show": 1
+},
+{
+	"label": "PC88",
+	"show": 0
+},
+{
+	"label": "PC98",
+	"show": 0
+},
+{
+	"label": "PCE",
+	"show": 0
+},
+{
+	"label": "PCE CD",
+	"show": 0
+},
+{
+	"label": "PCFX",
+	"show": 0
+},
+{
+	"label": "PGM",
+	"show": 1
+},
+{
+	"label": "PICO-8",
+	"show": 1
+},
+{
+	"label": "N. POKEMINI",
+	"show": 0
+},
+{
+	"label": "PORTS",
+	"show": 1
+},
+{
+	"label": "PS",
+	"show": 1
+},
+{
+	"label": "PSP",
+	"show": 1
+},
+{
+	"label": "PSPMINIS",
+	"show": 1
+},
+{
+	"label": "SATELLAVIEW",
+	"show": 0
+},
+{
+	"label": "SEGA SATURN",
+	"show": 1
+},
+{
+	"label": "SCUMMVM",
+	"show": 0
+},
+{
+	"label": "SEGA 32X",
+	"show": 0
+},
+{
+	"label": "SEGA CD",
+	"show": 0
+},
+{
+	"label": "N. SNES",
+	"show": 1
+},
+{
+	"label": "N. SNES MSU",
+	"show": 0
+},
+{
+	"label": "SFX",
+	"show": 0
+},
+{
+	"label": "SEGA SG-1000",
+	"show": 0
+},
+{
+	"label": "N. SUPER GB",
+	"show": 0
+},
+{
+	"label": "SUFAMI",
+	"show": 0
+},
+{
+	"label": "SUPERVISION",
+	"show": 0
+},
+{
+	"label": "THOMSON",
+	"show": 0
+},
+{
+	"label": "TI83",
+	"show": 0
+},
+{
+	"label": "TIC80",
+	"show": 0
+},
+{
+	"label": "TYRQUAKE",
+	"show": 0
+},
+{
+	"label": "UZEBOX",
+	"show": 0
+},
+{
+	"label": "N. VIRT. BOY",
+	"show": 0
+},
+{
+	"label": "VECTREX",
+	"show": 0
+},
+{
+	"label": "VIC 20",
+	"show": 0
+},
+{
+	"label": "VIDEOPAC",
+	"show": 0
+},
+{
+	"label": " VIDEOS",
+	"show": 0
+},
+{
+	"label": "VIDEOTON",
+	"show": 0
+},
+{
+	"label": "VMAC",
+	"show": 0
+},
+{
+	"label": "WS",
+	"show": 0
+},
+{
+	"label": "WSC",
+	"show": 0
+},
+{
+	"label": "SHARP x1",
+	"show": 0
+},
+{
+	"label": "SHARP X68000",
+	"show": 0
+},
+{
+	"label": "XRICK",
+	"show": 0
+},
+{
+	"label": "ZXSPECTRUM",
+	"show": 0
+},
+{
+	"label": "_BootLogo",
+	"show": 0
+},
+{
+	"label": "_Scraper",
+	"show": 0
+},
+{
+	"label": "_System Tools",
+	"show": 0
+}
+]
