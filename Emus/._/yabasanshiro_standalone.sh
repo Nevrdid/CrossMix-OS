@@ -22,6 +22,6 @@ else
   echo "Using real Saturn BIOS"
 fi
 
-gptokeyb "yabasanshiro" -c "keys.gptk" -k yabasanshiro &
+gptokeyb -1 "yabasanshiro" -c "keys.gptk" &
 yabasanshiro -r 3 -i "$@" -b "$BIOS_FILE" &>out.log
 pkill gptokeyb

@@ -1,8 +1,5 @@
 #!/bin/ash
 source /mnt/SDCARD/System/usr/trimui/scripts/launchers/common_launcher.sh
-
 cpufreq.sh conservative 0 6
-
-cd "$STD_DIR/Openbor/
-
-./OpenBOR "$1"
+export XDG_CONFIG_HOME=$STD_DIR/.config
+OpenBOR "$1"

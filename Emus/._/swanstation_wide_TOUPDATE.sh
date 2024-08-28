@@ -2,15 +2,11 @@
 source /mnt/SDCARD/System/usr/trimui/scripts/launchers/common_launcher.sh
 cpufreq.sh ondemand 5 7
 
-cd "$RA_DIR"
-
 if ! find "/mnt/SDCARD/BIOS" -maxdepth 1 -iname "scph*" -o -iname "psxonpsp660.bin" -o -iname "ps*.bin" | grep -q .; then
 	infoscreen.sh -i bg-exit.png -m "No bios found, SwanStation will probably not work." -k " "
 fi
 
-NET_PARAM=
-
-cd $PWD/.retroarch/config/SwanStation
+cd $RA_DIR/.retroarch/config/SwanStation
 
 ROM_PATH="$1"
 ROM_NAME=$(basename "$ROM_PATH" | sed 's/\.[^.]*$//')
@@ -37,8 +33,7 @@ if [ ! -f "$ROM_CFG" ] && [ ! -f "$ROM_OPT" ]; then
 	echo "Patch applied to $ROM_CFG"
 	echo "Patch applied to $ROM_OPT"
 
-	cd -
-	HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L .retroarch/cores/swanstation_libretro.so "$@"
+	ra64.trimui -v $NET_PARAM -L $RA_CORES/swanstation_libretro.so "$@"
 
 	# cleaning
 	rm "$ROM_CFG"

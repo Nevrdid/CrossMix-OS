@@ -9,15 +9,17 @@ dir=/mnt/SDCARD/System/usr/trimui/scripts/launchers
 
 if grep -q ra64.trimui "$0"; then
     RA_DIR="/mnt/SDCARD/RetroArch"
-    export PATH=$PATH:$RA_DIR
+    RA_CORES="$RA_DIR/.retroarch/cores"
+    export PATH="$PATH:$RA_DIR"
+    export HOME="$RA_DIR"
 
     source $dir/FolderOverrideFinder.sh
 
     ra_audio_switcher.sh
 else
     STD_DIR="/mnt/SDCARD/Standalones"
-    export PATH=$PATH:$STD_DIR/bin
-    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$STD_DIR/lib
+    export PATH="$PATH:$STD_DIR/bin"
+    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$STD_DIR/lib"
 
 fi
 

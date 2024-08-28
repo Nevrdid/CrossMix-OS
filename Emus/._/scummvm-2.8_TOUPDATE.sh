@@ -24,7 +24,4 @@ if [ "$romName" = "° Import ScummVM Games.launch" ]; then
 	exit
 fi
 
-NET_PARAM=
-
-cd "$RA_DIR"
-HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L .retroarch/cores/scummvm_libretro.so "$@"
+ra64.trimui -v $NET_PARAM -L $RA_CORES/scummvm_libretro.so "$@"

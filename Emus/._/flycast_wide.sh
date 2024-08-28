@@ -2,13 +2,7 @@
 source /mnt/SDCARD/System/usr/trimui/scripts/launchers/common_launcher.sh
 cpufreq.sh performance 7 7
 
-./effect.sh
-
-NET_PARAM=
-
-cd "$RA_DIR"
-
-cd ".retroarch/config/Flycast"
+cd "$RA_DIR/.retroarch/config/Flycast"
 
 ROM_NAME=$(basename "$1" | sed 's/\.[^.]*$//')
 
@@ -34,8 +28,7 @@ if [ ! -f "$ROM_CFG" ] && [ ! -f "$ROM_OPT" ]; then
 	echo "Patch applied to $ROM_CFG"
 	echo "Patch applied to $ROM_OPT"
 
-	cd -
-	HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L .retroarch/cores/flycast_libretro.so "$@"
+	ra64.trimui -v $NET_PARAM -L $RA_CORES/flycast_libretro.so "$@"
 	# cleaning
 	rm "$ROM_CFG"
 	rm "$ROM_OPT"

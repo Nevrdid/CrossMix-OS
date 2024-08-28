@@ -2,9 +2,6 @@
 source /mnt/SDCARD/System/usr/trimui/scripts/launchers/common_launcher.sh
 cpufreq.sh performance 7 7
 
-./effect.sh
-
-
 cd "$STD_DIR/flycast"
 
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+$LD_LIBRARY_PATH:}:lib

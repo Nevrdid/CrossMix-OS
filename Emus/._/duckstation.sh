@@ -7,8 +7,4 @@ if ! find "/mnt/SDCARD/BIOS" -maxdepth 1 -iname "scph*" -o -iname "psxonpsp660.b
 	infoscreen.sh -i bg-exit.png -m "No bios found, DuckStation will probably not work." -k " "
 fi
 
-
-NET_PARAM=
-
-cd "$RA_DIR"
-HOME="$PWD" ./ra64.trimui -v $NET_PARAM -L .retroarch/cores/duckstation_libretro.so "$@"
+ra64.trimui -v $NET_PARAM -L $RA_CORES/duckstation_libretro.so "$@"

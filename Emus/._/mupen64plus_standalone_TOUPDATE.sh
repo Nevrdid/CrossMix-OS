@@ -2,17 +2,13 @@
 source /mnt/SDCARD/System/usr/trimui/scripts/launchers/common_launcher.sh
 cpufreq.sh ondemand 5 7
 
-cd "$STD_DIR/.config/mupen64plus"
-
-export XDG_CONFIG_HOME="$PWD"
-export XDG_DATA_HOME="$PWD"
+export XDG_CONFIG_HOME="$STD_DIR/.config"
+export XDG_DATA_HOME="$STD_DIR/.local/.share"
 export FRT_NO_EXIT_SHORTCUTS=FRT_NO_EXIT_SHORTCUTS
-
-PATH="$PWD${PATH:+:$PATH}"
-export LD_LIBRARY_PATH="$PWD:$PWD/libs${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 
 launcher_call=$(grep -i "dowork 0x" "/tmp/log/messages" | tail -n 1)
 
+cd $XDG_CONFIG_HOME
 if echo $launcher_call | grep -qi "Rice"; then
 	set_ra_cfg.sh "$PWD/mupen64plus.cfg" "VideoPlugin" "mupen64plus-video-rice.so"
 else
@@ -32,10 +28,10 @@ case "$*" in
 	;;
 esac
 
-"$PM_DIR"/gptokeyb2 -c "./defkeys.gptk" &
+$PM_DIR/gptokeyb2 -c "./defkeys.gptk" &
 sleep 0.3
 
-HOME="$PWD" ./mupen64plus "$ROM_PATH"
+mupen64plus "$ROM_PATH"
 
 rm -f "$TEMP_ROM"
 
