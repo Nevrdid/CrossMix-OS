@@ -7,7 +7,7 @@ if [ "$subdir_count" -gt 1 ]; then
 		echo "Subdirectory from $first_subdir detected !"
 
 		# We try to find the config folder :
-		core_filename=$(grep '^ra64.trimui' "$0" | grep '_libretro\.so' | sed -E 's|.*cores/([^/]+\.so).*|\1|')          # we find the core filename in the launch script itself
+		core_filename=$(sed -E 's|^ra64.trimui.*RA_CORES/([^/]+\.so).*|\1|' "$0")          # we find the core filename in the launch script itself
 		core_folder=$(grep -m 1 "$core_filename" /mnt/SDCARD/System/usr/trimui/scripts/core_folders.csv | cut -d';' -f2) # we use a core database which indicates for a core filename the corresponding config path
 		echo "The core folder for $core_filename is: $core_folder"
 
