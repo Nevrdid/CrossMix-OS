@@ -12,6 +12,26 @@
   "hidebios": 1,
   "launchlist": [
     {
+      "name": "FB Neo (Libretro)",
+      "launch": "../._/fbneo.sh"
+    },
+    {
+      "name": "FB Neo Vertical(Libretro)",
+      "launch": "../._/fbneo_vertical.sh"
+    },
+    {
+      "name": "MAME2003plus (Libretro)",
+      "launch": "../._/mame2003plus.sh"
+    },
+    {
+      "name": "Advance Mame (Standalone)",
+      "launch": "../._/advmame.sh"
+    },
+    {
+      "name": "FB Alpha (Libretro)",
+      "launch": "../._/fbalpha.sh"
+    },
+    {
       "name": "MAME2023 0.259 (Libretro)",
       "launch": "../._/mame.sh"
     },
@@ -26,6 +46,10 @@
     {
       "name": "MAME2015 0.160 (Libretro)",
       "launch": "../._/mame2015.sh"
+    },
+    {
+      "name": "MAME2010 (Libretro)",
+      "launch": "../._/mame2010.sh"
     },
     {
       "name": "MAME2000 0.37 (Libretro)",
