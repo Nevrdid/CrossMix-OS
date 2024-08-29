@@ -7,5 +7,6 @@ export LD_LIBRARY_PATH="$PWD/lib:/mnt/SDCARD/System/lib:/usr/lib${LD_LIBRARY_PAT
 
 ./cpufreq.sh
 
+Gamedir=$(dirname "$@")
 Gamefile=$(basename "$@")
-HOME="$PWD" ./advmame "${Gamefile%.*}"
+HOME="$PWD" ./advmame -dir_rom "$Gamedir" "${Gamefile%.*}"
