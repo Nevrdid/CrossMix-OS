@@ -12,7 +12,7 @@ if grep -q ra64.trimui "$0"; then
     RA_CORES="$RA_DIR/.retroarch/cores"
     export PATH="$PATH:$RA_DIR"
     export HOME="$RA_DIR"
-
+  
     source $dir/FolderOverrideFinder.sh
 
     ra_audio_switcher.sh
@@ -25,3 +25,5 @@ fi
 
 cd "$EMU_DIR"
 source $dir/save_launcher.sh
+
+[ -n "$RA_DIR" ] && cd $RA_DIR
