@@ -2,12 +2,6 @@
 
 source /mnt/SDCARD/System/usr/trimui/scripts/launchers/common_launcher.sh
 
-set_backend() {
-	config_file="ppsspp/PSP/SYSTEM/ppsspp.ini"
-	sed -i '/^\[Graphics\]$/,/^\[/ s/GraphicsBackend = .*/GraphicsBackend = '"$1"'/' "$config_file"
-	return 0
-}
-
 cd $STD_DIR/.config/ppsspp_1.15.4
 export XDG_CONFIG_HOME=$PWD
 
