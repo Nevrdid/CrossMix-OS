@@ -1,3 +1,3 @@
 #!/bin/ash
 
-source /mnt/SDCARD/System/usr/trimui/scripts/load_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/load.sh

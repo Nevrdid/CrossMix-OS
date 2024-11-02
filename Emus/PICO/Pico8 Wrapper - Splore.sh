@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 cpufreq.sh ondemand 3 6
 
 export picodir=/mnt/SDCARD/Emus/PICO/PICO8_Wrapper
@@ -25,3 +25,4 @@ fi
 mount --bind /mnt/SDCARD/Roms/PICO /mnt/SDCARD/Emus/PICO/PICO8_Wrapper/.lexaloffle/pico-8/carts
 pico8_64 -splore -preblit_scale 3
 umount /mnt/SDCARD/Apps/pico/.lexaloffle/pico-8/carts
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh

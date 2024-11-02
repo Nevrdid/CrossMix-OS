@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 cpufreq.sh ondemand 4 7
 
 # cwd is EMU_DIR
@@ -22,3 +22,4 @@ else
     echo "Using bilinear scaling"
     ./drastic "$*"
 fi
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh

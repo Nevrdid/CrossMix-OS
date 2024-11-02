@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 cpufreq.sh performance 2 7
 
 Gamename="$(basename "$1" .zip)"
@@ -13,3 +13,4 @@ cd "$RA_DIR"
 HOME=$RA_DIR/ $RA_DIR/ra64.trimui -v -L $RA_DIR/.retroarch/cores/fbneo_libretro.so "$1" --appendconfig "$cfg_override"
 
 rm "$remap_dir/$Gamename.rmp"
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh

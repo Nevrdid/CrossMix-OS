@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 cpufreq.sh ondemand 5 7
 
 cd $RA_DIR/
@@ -9,3 +9,4 @@ if ! find "/mnt/SDCARD/BIOS" -maxdepth 1 -iname "scph*" -o -iname "psxonpsp660.b
 fi
 
 HOME=$RA_DIR/ $RA_DIR/ra64.trimui -v -L $RA_DIR/.retroarch/cores/swanstation_libretro.so "$@"
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh

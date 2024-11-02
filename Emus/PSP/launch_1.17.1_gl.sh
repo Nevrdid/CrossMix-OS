@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 
 # cwd is EMU_DIR
 cd PPSSPP_1.17.1
@@ -18,3 +18,4 @@ sed -i '/^\[Graphics\]$/,/^\[/ s/GraphicsBackend = .*/GraphicsBackend = 0/' "$co
 #export SDL_AUDIODRIVER=dsp   //disable 20231031 for sound suspend issue
 HOME=$PWD ./PPSSPPSDL_gl "$*"
 
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh

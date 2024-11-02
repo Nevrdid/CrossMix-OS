@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 
 # cwd is EMU_DIR
 cd PPSSPP_1.15.4
@@ -12,3 +12,4 @@ else
 fi
 
 HOME=$PWD ./PPSSPPSDL "$*"
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh

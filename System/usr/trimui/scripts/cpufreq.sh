@@ -18,6 +18,8 @@ id_to_freq() {
 	esac
 }
 
+
+
 if [ "$governor" != "interactive" ] && [ "$governor" != "ondemand" ] && [ "$governor" != "performance" ] && [ "$governor" != "powersave" ] && [ "$governor" != "conservative" ]; then
 	echo "cpufreq.sh: Invalid governor."
 	exit 1

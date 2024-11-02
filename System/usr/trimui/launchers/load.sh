@@ -36,5 +36,5 @@ if [ -z "$Launcher_name" ]; then
 	fi
 fi
 
-echo "load_launcher.sh : $Launcher_name dowork 0x" >>/tmp/log/messages
+echo "load.sh : $Launcher_name dowork 0x" >>/tmp/log/messages
 "$EMU_DIR/$Launcher_command" "$@"

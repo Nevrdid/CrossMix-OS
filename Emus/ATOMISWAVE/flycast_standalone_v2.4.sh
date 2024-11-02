@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 cpufreq.sh performance 7 7
 
 cd "/mnt/SDCARD/Emus/DC/flycast_v2.4"
@@ -15,3 +15,4 @@ export XDG_CONFIG_HOME="$PWD/config/"
 mkdir -p "$FLYCAST_BIOS_DIR/flycast"
 
 ./flycast "$@"
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh

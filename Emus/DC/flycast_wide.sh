@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 cpufreq.sh performance 7 7
 
 cd $RA_DIR/
@@ -67,3 +67,4 @@ fi
 
 
 
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh

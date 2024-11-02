@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 cpufreq.sh ondemand 4 7
 
 cd $RA_DIR/
@@ -49,3 +49,4 @@ else
     [ -f "$ROM_OPT" ] && message="$message $ROM_OPT"
     echo "$message"
 fi
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh

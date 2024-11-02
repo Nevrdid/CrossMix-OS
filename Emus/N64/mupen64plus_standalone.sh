@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 cpufreq.sh ondemand 4 7
 
 EMU_DIR=/mnt/SDCARD/Emus/N64/mupen64plus
@@ -45,3 +45,4 @@ HOME="$EMU_DIR" ./mupen64plus "$ROM_PATH"
 rm -f "$TEMP_ROM"
 
 kill -9 $(pidof gptokeyb2)
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh

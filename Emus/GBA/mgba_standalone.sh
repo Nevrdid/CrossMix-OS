@@ -1,5 +1,5 @@
 #!/bin/sh
-source /mnt/SDCARD/System/usr/trimui/scripts/common_launcher.sh
+source /mnt/SDCARD/System/usr/trimui/launchers/init.sh
 cpufreq.sh ondemand 2 6
 
 export LD_LIBRARY_PATH="/mnt/SDCARD/System/lib:$EMU_DIR/lib:/usr/lib:$LD_LIBRARY_PATH"
@@ -10,3 +10,4 @@ sleep 0.3
 
 $EMU_DIR/mgba "$@" 
 kill -9 $(pidof gptokeyb2)
+source /mnt/SDCARD/System/usr/trimui/launchers/close.sh
