@@ -28,33 +28,36 @@ if [ "$version" != "$FW_patched_version" ]; then
     display=$(fbset | grep ^mode | cut -d "\"" -f 2)
     if [ "$display" != "1280x720-64" ]; then
         device="brick"
+        Sha_expected_1ms=54fedf5cc24e76b40754501e6f637c55ccd0afb0
+        Sha_expected_8ms=f53b0ff704b43a329f722a2f002dfd0774c67997
+        Sha_expected_16ms=8482a52ed9dc92ba671a48b1490c11f9824f7955
     else
         device="tsp"
         Sha_expected_1ms=c90b9fa722d745a7e827f38dbd409d3cd1ba56f5
         Sha_expected_8ms=3f1b81d668c3f7de2cc0458502326a732d3cb0b2
         Sha_expected_16ms=356b41b0be9d00f361e45303f41f5f1f337e6efc
+    fi
 
-        inputd_src_dir=/mnt/SDCARD/System/resources/${device}_inputd
-        Sha_1ms=$(sha1sum "$inputd_src_dir/1ms" | cut -d ' ' -f 1)
-        Sha_8ms=$(sha1sum "$inputd_src_dir/8ms" | cut -d ' ' -f 1)
-        Sha_16ms=$(sha1sum "$inputd_src_dir/16ms" | cut -d ' ' -f 1)
-        if [ "$Sha_expected_1ms" = "$Sha_1ms" ] && [ "$Sha_expected_8ms" = "$Sha_8ms" ] &&
-            [ "$Sha_expected_16ms" = "$Sha_16ms" ]; then
+    inputd_src_dir=/mnt/SDCARD/System/resources/${device}_inputd
+    Sha_1ms=$(sha1sum "$inputd_src_dir/1ms" | cut -d ' ' -f 1)
+    Sha_8ms=$(sha1sum "$inputd_src_dir/8ms" | cut -d ' ' -f 1)
+    Sha_16ms=$(sha1sum "$inputd_src_dir/16ms" | cut -d ' ' -f 1)
+    if [ "$Sha_expected_1ms" = "$Sha_1ms" ] && [ "$Sha_expected_8ms" = "$Sha_8ms" ] &&
+        [ "$Sha_expected_16ms" = "$Sha_16ms" ]; then
 
-            if [ ! -f /usr/trimui/bin/trimui_inputd.bak ]; then
-                mv /usr/trimui/bin/trimui_inputd /usr/trimui/bin/trimui_inputd.bak
-            fi
-
-            for f in "$inputd_src_dir"/*;do
-                chmod +x "$f"
-                cp "$f" /usr/trimui/bin/trimui_inputd."$(basename "$f")"
-            done
-            cp -f /usr/trimui/bin/trimui_inputd.16ms /usr/trimui/bin/trimui_inputd
-
-            cp /mnt/SDCARD/System/resources/preload.sh /usr/trimui/bin/preload.sh
-        else
-            /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "Not able to update trimui_inputd, at least one new is missing or corrupted"
+        if [ ! -f /usr/trimui/bin/trimui_inputd.bak ]; then
+            mv /usr/trimui/bin/trimui_inputd /usr/trimui/bin/trimui_inputd.bak
         fi
+
+        for f in "$inputd_src_dir"/*;do
+            chmod +x "$f"
+            cp "$f" /usr/trimui/bin/trimui_inputd."$(basename "$f")"
+        done
+        cp -f /usr/trimui/bin/trimui_inputd.16ms /usr/trimui/bin/trimui_inputd
+
+        cp /mnt/SDCARD/System/resources/preload.sh /usr/trimui/bin/preload.sh
+    else
+        /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "Not able to update trimui_inputd, at least one new is missing or corrupted"
     fi
 
 	# Removing duplicated app

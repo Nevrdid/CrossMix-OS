@@ -8,7 +8,12 @@ CrossMixFWfile="/mnt/SDCARD/trimui/firmwares/MinFwVersion.txt"
 Current_FW_Revision=$(grep 'DISTRIB_DESCRIPTION' /etc/openwrt_release | cut -d '.' -f 3)
 Required_FW_Revision=$(sed -n '2p' "$CrossMixFWfile")
 
-if [ "$Current_FW_Revision" -gt "$Required_FW_Revision" ]; then # on firmware hotfix 9 there is less space than before on /dev/mmcblk0p1 so we avoid to flash the logo
+display=$(fbset | grep ^mode | cut -d "\"" -f 2)
+res=${display%-*}
+screen_width=${res%x*}
+screen_height=${res#*x}
+
+if [ "$res" = "1280x720" ] && [ "$Current_FW_Revision" -gt "$Required_FW_Revision" ]; then # on firmware hotfix 9 there is less space than before on /dev/mmcblk0p1 so we avoid to flash the logo
 	/mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "Bootlogo flash is not compatible with firmware superior to v1.0.4 hotfix 6." -t 3
     exit 1
 fi
@@ -54,16 +59,16 @@ if [ -f "$SOURCE_FILE" ]; then
 
 	echo "Resolution of \"$filename\" is: ${width}x${height}"
 
-	################# Check if the resolution is 1280x720 #################
-	if [ "$width" -gt 1280 ] || [ "$height" -gt 720 ]; then
+	################# Check if the resolution is same as screen one #################
+	if [ "$width" -gt "$screen_width" ] || [ "$height" -gt "$screen_height" ]; then
 		echo "The image \"$filename\" is too large. Quitting without flash."
-		[ "$silent" -eq 0 ] && /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -i "$SOURCE_FILE" -m "Image resolution is larger than expected, exiting. (${width}x${height} instead of 1280x720)" -t 5 -c "220,0,0"
+		[ "$silent" -eq 0 ] && /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -i "$SOURCE_FILE" -m "Image resolution is larger than expected, exiting. (${width}x${height} instead of $res)" -t 5 -c "220,0,0"
 		exit 1
-	elif [ "$width" -lt 1280 ] || [ "$height" -lt 720 ]; then
+	elif [ "$width" -lt "$screen_width" ] || [ "$height" -lt "$screen_height" ]; then
 		echo "The image \"$filename\" is too small. Not recommended but should be OK."
-		[ "$silent" -eq 0 ] && /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -i "$SOURCE_FILE" -m "Image resolution is smaller than expected. (${width}x${height} instead of 1280x720)" -t 5 -c "220,0,0"
+		[ "$silent" -eq 0 ] && /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -i "$SOURCE_FILE" -m "Image resolution is smaller than expected. (${width}x${height} instead of $res)" -t 5 -c "220,0,0"
 	else
-		echo "The image \"$filename\" has a resolution of 1280x720. Let's continue !"
+		echo "The image \"$filename\" has a resolution of $res. Let's continue !"
 	fi
 
 	################# Check if file type is BMP #################
