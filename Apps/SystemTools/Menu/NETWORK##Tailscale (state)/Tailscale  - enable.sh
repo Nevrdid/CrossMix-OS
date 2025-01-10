@@ -13,7 +13,6 @@ export LD_LIBRARY_PATH="/mnt/SDCARD/System/lib:/usr/trimui/lib:$LD_LIBRARY_PATH"
 TAILSCALED="/mnt/SDCARD/System/bin/tailscaled"
 TAILSCALE="/mnt/SDCARD/System/bin/tailscaled"
 TAILSCALED_STATE_FILE="/mnt/SDCARD/System/etc/tailscale/tailscaled.state"
-JSON_FILE="/mnt/SDCARD/System/etc/crossmix.json"
 LOGIN_LOG="/mnt/SDCARD/System/etc/tailscale/login.txt"
 export STATE_DIRECTORY=/mnt/SDCARD/System/etc/tailscale
 URL="https://github.com/cizia64/CrossMix-OS/raw/refs/heads/main/_assets/resources/tailscale.7z"
@@ -42,11 +41,6 @@ fi
 echo -e "${BLUE}Applying \"$(basename "$0" .sh)\" by default...${NONE}"
 /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "Applying \"$(basename "$0" .sh)\" by default..."
 
-# Create JSON file if missing
-[ ! -f "$JSON_FILE" ] && echo "{}" >"$JSON_FILE"
-
-# Update JSON file
-/mnt/SDCARD/System/bin/jq '. += {"Tailscale": 1}' "$JSON_FILE" >"/tmp/json_file.tmp" && mv "/tmp/json_file.tmp" "$JSON_FILE"
 
 # Stop any existing Tailscale process and start it with the state file
 pkill -9 "$TAILSCALED"
@@ -129,7 +123,7 @@ else
 fi
 
 # Update main UI state
-/mnt/SDCARD/System/usr/trimui/scripts/mainui_state_update.sh "Tailscale" "enabled"
+/mnt/SDCARD/System/usr/trimui/scripts/states_update.sh "Tailscale" "enabled"
 
 # Display final notification
 if ! check_tailscale_status; then

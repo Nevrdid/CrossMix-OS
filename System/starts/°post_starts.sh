@@ -7,32 +7,32 @@ fi
 
 # Swap A B
 SWAP_AB_enabled=$(/mnt/SDCARD/System/bin/jq -r '["SWAP A B"]' "/mnt/SDCARD/System/etc/crossmix.json")
-if [ "$SWAP_AB_enabled" -eq 1 ]; then
+if [ "$SWAP_AB_enabled" = "enabled" ]; then
 	mkdir -p /var/trimui_inputd
 	touch /var/trimui_inputd/swap_ab
 fi
 
 # Telnet service
 TELNET_enabled=$(/mnt/SDCARD/System/bin/jq -r '.["TELNET"]' "/mnt/SDCARD/System/etc/crossmix.json")
-if [ "$TELNET_enabled" -eq 1 ]; then
+if [ "$TELNET_enabled" = "enabled" ]; then
 	telnetd
 fi
 
 # Syncthing service
 Syncthing_enabled=$(/mnt/SDCARD/System/bin/jq -r '.["Syncthing"]' "/mnt/SDCARD/System/etc/crossmix.json")
-if [ "$Syncthing_enabled" -eq 1 ]; then
+if [ "$Syncthing_enabled" = "enabled" ]; then
 	CONFIGPATH=/mnt/SDCARD/System/etc/syncthing
 	/mnt/SDCARD/System/bin/syncthing serve --no-restart --no-upgrade --config="$CONFIGPATH" --data="$CONFIGPATH/data" &
 fi
 
 # SMB service
 smb_enabled=$(/mnt/SDCARD/System/bin/jq -r '.["SMB"]' "/mnt/SDCARD/System/etc/crossmix.json")
-if [ "$smb_enabled" -eq 1 ]; then
+if [ "$smb_enabled" = "enabled" ]; then
 	rm -rf /var/cache/samba /var/log/samba /var/lock/subsys /var/run/samba /var/lib/samba/
 	mkdir -p /var/cache/samba /var/log/samba /var/lock/subsys /var/run/samba /var/run/samba/locks /var/lib/samba/private
 
 	smb_secure_enabled=$(/mnt/SDCARD/System/bin/jq -r '.["SMB_secure"]' "/mnt/SDCARD/System/etc/crossmix.json")
-	if [ "$smb_secure_enabled" -eq 1 ]; then
+	if [ "$smb_secure_enabled" = "enabled" ]; then
 		CONFIGFILE="/mnt/SDCARD/System/etc/samba/smb-secure.conf"
 		echo -e "trimui\ntrimui\n" | smbpasswd -s -a root -c ${CONFIGFILE}
 	else
@@ -47,7 +47,7 @@ fi
 
 # Tailscale service
 Tailscale_enabled=$(/mnt/SDCARD/System/bin/jq -r '.["Tailscale"]' "/mnt/SDCARD/System/etc/crossmix.json")
-if [ "$Tailscale_enabled" -eq 1 ]; then
+if [ "$Tailscale_enabled" = "enabled" ]; then
 	export STATE_DIRECTORY=/mnt/SDCARD/System/etc/tailscale
 	/mnt/SDCARD/System/bin/tailscaled --state="/mnt/SDCARD/System/etc/tailscale/tailscaled.state" &
 fi

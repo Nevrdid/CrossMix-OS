@@ -12,10 +12,4 @@ find /mnt/SDCARD/Emus/ -name "config.json" -exec sh -c '
     /mnt/SDCARD/System/bin/jq --arg new_icon "$icons_path" ".icon=\"$icons_path\"" "{}"  > /tmp/tmp_config.json && mv /tmp/tmp_config.json "{}"
 ' sh "$script_name" {} \;
 
-json_file="/mnt/SDCARD/System/etc/crossmix.json"
-if [ ! -f "$json_file" ]; then
-    echo "{}" >"$json_file"
-fi
-/mnt/SDCARD/System/bin/jq --arg script_name "$script_name" '. += {"ICONS": $script_name}' "$json_file" >"/tmp/json_file.tmp" && mv "/tmp/json_file.tmp" "$json_file"
-
-/mnt/SDCARD/System/usr/trimui/scripts/mainui_state_update.sh "ICONS" "$script_name"
+/mnt/SDCARD/System/usr/trimui/scripts/states_update.sh "ICONS" "$script_name"

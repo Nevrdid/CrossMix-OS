@@ -42,17 +42,8 @@ else
     exit 1
 fi
 
-# Menu modification to reflect the change immediately
-
-# update crossmix.json configuration file
-json_file="/mnt/SDCARD/System/etc/crossmix.json"
-if [ ! -f "$json_file" ]; then
-    echo "{}" >"$json_file"
-fi
-jq --arg polling_rate "$polling_rate" '. += {"POLLING RATE": $polling_rate}' "$json_file" >"/tmp/json_file.tmp" && mv "/tmp/json_file.tmp" "$json_file"
-
 # update database of "System Tools" database
-/mnt/SDCARD/System/usr/trimui/scripts/mainui_state_update.sh "POLLING RATE" "$polling_rate"
+/mnt/SDCARD/System/usr/trimui/scripts/states_update.sh "POLLING RATE" "$polling_rate"
 
 /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "Applying $polling_rate polling rate..." -t 1
 pkill trimui_inputd

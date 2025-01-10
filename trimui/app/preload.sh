@@ -5,7 +5,7 @@ SDCARD_TRIMUI_DIR=/mnt/SDCARD/trimui
 export LD_LIBRARY_PATH=/usr/trimui/lib:${SDCARD_TRIMUI_DIR}/lib
 
 SWAP_AB_enabled=$(/mnt/SDCARD/System/bin/jq -r '.["SWAP A B"]' "/mnt/SDCARD/System/etc/crossmix.json")
-if [ "$SWAP_AB_enabled" -eq 1 ]; then
+if [ "$SWAP_AB_enabled" = "enabled" ]; then
   touch /var/trimui_inputd/swap_ab
 fi
 rm -f /var/trimui_inputd/ra_hotkey
@@ -20,9 +20,9 @@ runifnecessary() {
 if [ -f "/mnt/SDCARD/trimui/app/cmd_to_run.sh" ]; then
 
 	resume_at_boot=$(/mnt/SDCARD/System/bin/jq -r '.["RESUME AT BOOT"]' "/mnt/SDCARD/System/etc/crossmix.json")
-	if [ "$resume_at_boot" -eq 0 ]; then
+	if [ "$resume_at_boot" = "enabled" ]; then
 		rm /mnt/SDCARD/trimui/app/cmd_to_run.sh
-		echo "The value of 'RESUME AT BOOT' is 0."
+		echo "'RESUME AT BOOT' is disabled."
 		exit 1
 	fi
 

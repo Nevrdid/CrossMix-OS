@@ -4,14 +4,6 @@ export LD_LIBRARY_PATH="/mnt/SDCARD/System/lib:/mnt/SDCARD/Apps/PortMaster/PortM
 
 /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "Applying \"$(basename "$0" .sh)\" by default..."
 
-json_file="/mnt/SDCARD/System/etc/crossmix.json"
-
-if [ ! -f "$json_file" ]; then
-  echo "{}" >"$json_file"
-fi
-
-/mnt/SDCARD/System/bin/jq '. += {"VNC": 1}' "$json_file" >"/tmp/json_file.tmp" && mv "/tmp/json_file.tmp" "$json_file"
-
 pkill -9 vncserver
 pkill -9 gptokeyb2
 sleep 0.3
@@ -30,7 +22,7 @@ sleep 0.5
 vncserver -k $keyb_input &
 
 # we modify the DB entries to reflect the current state
-/mnt/SDCARD/System/usr/trimui/scripts/mainui_state_update.sh "VNC" "enabled"
+/mnt/SDCARD/System/usr/trimui/scripts/states_update.sh "VNC" "enabled"
 
 sleep 1
 IP=$(ip route get 1 2>/dev/null | awk '{print $NF;exit}')

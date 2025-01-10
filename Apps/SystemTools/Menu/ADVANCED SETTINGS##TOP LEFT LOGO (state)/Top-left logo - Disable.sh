@@ -24,4 +24,4 @@ fi
 sync
 
 # Menu modification to reflect the change immediately
-/mnt/SDCARD/System/usr/trimui/scripts/mainui_state_update.sh "TOP LEFT LOGO" "disabled"
+/mnt/SDCARD/System/usr/trimui/scripts/states_update.sh --mainui "TOP LEFT LOGO" "disabled"

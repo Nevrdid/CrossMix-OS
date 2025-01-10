@@ -9,4 +9,4 @@ cd "$CurrentTheme/sound/"
 mv ./click-off.wav ./click.wav
 
 # we modify the DB entries to reflect the current state
-/mnt/SDCARD/System/usr/trimui/scripts/mainui_state_update.sh "CLICK" "enabled"
+/mnt/SDCARD/System/usr/trimui/scripts/states_update.sh --mainui "CLICK" "enabled"

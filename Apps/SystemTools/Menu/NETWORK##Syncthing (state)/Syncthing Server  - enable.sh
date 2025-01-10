@@ -16,14 +16,6 @@ XMLSTARLET="/mnt/SDCARD/System/bin/xml"
 
 /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "Applying \"$(basename "$0" .sh)\" by default..."
 
-json_file="/mnt/SDCARD/System/etc/crossmix.json"
-
-if [ ! -f "$json_file" ]; then
-  echo "{}" >"$json_file"
-fi
-
-/mnt/SDCARD/System/bin/jq '. += {"Syncthing": 1}' "$json_file" >"/tmp/json_file.tmp" && mv "/tmp/json_file.tmp" "$json_file"
-
 pkill $SYNCTHING
 if ! [ -f $CONFIG_FILE ]; then
   mkdir -p "$CONFIGPATH/data"
@@ -50,7 +42,7 @@ sync
 $SYNCTHING serve --no-restart --no-upgrade --config="$CONFIGPATH" --data="$CONFIGPATH/data" &
 
 # we modify the DB entries to reflect the current state
-/mnt/SDCARD/System/usr/trimui/scripts/mainui_state_update.sh "Syncthing" "enabled"
+/mnt/SDCARD/System/usr/trimui/scripts/states_update.sh "Syncthing" "enabled"
 
 sleep 1
 

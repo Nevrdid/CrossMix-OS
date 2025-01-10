@@ -11,4 +11,4 @@ else
     /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "\"${theme}\" theme directory does not exist !!" -c red -t 3
 fi
 
-/mnt/SDCARD/System/usr/trimui/scripts/mainui_state_update.sh "THEMES" "$theme"
+/mnt/SDCARD/System/usr/trimui/scripts/states_update.sh "THEMES" "$theme"

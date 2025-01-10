@@ -9,4 +9,4 @@ cd "$CurrentTheme/sound/"
 mv ./bgm-off.mp3 ./bgm.mp3
 
 # we modify the DB entries to reflect the current state
-/mnt/SDCARD/System/usr/trimui/scripts/mainui_state_update.sh "MUSIC" "enabled"
+/mnt/SDCARD/System/usr/trimui/scripts/states_update.sh --mainui "MUSIC" "enabled"

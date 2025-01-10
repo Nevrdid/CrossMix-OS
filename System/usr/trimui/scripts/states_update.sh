@@ -10,6 +10,14 @@
 export PATH="/mnt/SDCARD/System/bin:$PATH"
 export LD_LIBRARY_PATH="/mnt/SDCARD/System/lib:/usr/trimui/lib:$LD_LIBRARY_PATH"
 
+crossmix_state_update(){
+    json_file="/mnt/SDCARD/System/etc/crossmix.json"
+    if [ ! -f "$json_file" ]; then
+        echo "{}" >"$json_file"
+    fi
+    jq --arg name "$1" --arg value "$2" '. += {"$name": $value}' "$json_file" >"/tmp/json_file.tmp" && mv "/tmp/json_file.tmp" "$json_file"
+}
+
 mainui_state_update() {
     local label_str="$1"
     local value_str="$2"
@@ -35,7 +43,7 @@ EOF
     # Update the state.json file if it exists
     json_file="/tmp/state.json"
     if [ -f "$json_file" ]; then
-        /mnt/SDCARD/System/bin/jq --arg value_str "$value_str" --arg label_str "$label_str" \
+        jq --arg value_str "$value_str" --arg label_str "$label_str" \
             '.list |= map(if (.ppath | index($label_str)) then .ppath = "\($label_str) (\($value_str))" else . end)' \
             "$json_file" >"$json_file.tmp" && mv "$json_file.tmp" "$json_file"
     fi
@@ -43,4 +51,12 @@ EOF
     sleep 0.1
 }
 
-mainui_state_update "$1" "$2"
+if [ "$1" = --mainui ]; then
+    mainui_state_update "$2" "$3"
+elif [ "$1" = --crossmix ]; then
+    crossmix_state_update "$2" "$3"
+else
+    mainui_state_update "$1" "$2"
+    crossmix_state_update "$1" "$2"
+fi
+

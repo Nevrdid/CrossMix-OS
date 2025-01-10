@@ -2,7 +2,6 @@
 
 export PATH="$PATH:/mnt/SDCARD/System/usr/trimui/scripts"
 export HOME="/mnt/SDCARD/RetroArch"
-export TOOL_DIR="/mnt/SDCARD/Apps/SystemTools/Menu/EMULATORS##STANDALONES RETROACHIEVEMENTS/"
 
 RA_Config="/mnt/SDCARD/RetroArch/retroarch.cfg"
 Username=$(grep "^cheevos_username" "$RA_Config" | sed -n 's/^[^"]*"\(.*\)".*$/\1/p')

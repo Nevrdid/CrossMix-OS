@@ -299,7 +299,7 @@ sqlite3 "$database_file" "SELECT disp, path FROM Menu_roms WHERE type = 1 AND di
     fi
     # ----------------------------------------------------------------------
 
-    if [ "$CurState" -eq 1 ]; then
+    if [ "$CurState" -eq 1 ] || [ "$CurState" = "enabled" ]; then
       disp_withstate="$disp_withoutstate (enabled)"
     else
       disp_withstate="$disp_withoutstate (disabled)"
