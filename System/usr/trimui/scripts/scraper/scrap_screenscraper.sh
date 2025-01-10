@@ -229,15 +229,15 @@ if [ -f "$ScraperConfigFile" ]; then
 
     config=$(cat $ScraperConfigFile)
 
-    MediaType=$(echo "$config" | jq -r '.Screenscraper_MediaType')
+    MediaType=$(echo "$config" | jq -r '.["Media Type"]')
 
-    SelectedRegion=$(echo "$config" | jq -r '.Screenscraper_Region')
+    SelectedRegion=$(echo "$config" | jq -r '.["Region"]')
     echo "Scraping Target: $CurrentSystem"
     echo "Media Type: $MediaType"
     echo "Current Region: $SelectedRegion"
-    userSS=$(echo "$config" | jq -r '.screenscraper_username')
-    passSS=$(echo "$config" | jq -r '.screenscraper_password')
-    ScrapeInBackground=$(echo "$config" | jq -r '.ScrapeInBackground')
+    userSS=$(echo "$config" | jq -r '.["username"]')
+    passSS=$(echo "$config" | jq -r '.["password"]')
+    ScrapeInBackground=$(echo "$config" | jq -r '.["Scrape In Background"]')
     u=$(echo -n KUZE433CLBLHSZCIOB2AU=== | base32 -d | base64 -d)
     p=$(echo -n KZEFMTCTIRBHMWJQN55GKSCRGFKGOPJ5BI====== | base32 -d | base64 -d)
 

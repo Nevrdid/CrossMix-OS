@@ -198,7 +198,7 @@ if [ "$current_crc_Emus" != "$previous_crc_Emus" ] || [ "$current_crc_DB" != "$p
     while IFS='|' read -r disp path; do
       disp_withoutvalue=$(echo "$disp" | sed 's/ (value)//g')
       json_keyname=$(echo "$disp_withoutvalue" | tr -d ' ') # remove spaces
-      if ! [ "$json_keyname" = "ScrapeInBackground" ]; then
+      if ! [ "$json_keyname" = "Scrape In Background"]; then
         json_keyname="Screenscraper_$json_keyname"
       fi
       CurState=$(jq -r --arg disp "$json_keyname" '.[$disp] // "Default"' "/mnt/SDCARD/System/etc/scraper.json")

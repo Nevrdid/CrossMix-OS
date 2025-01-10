@@ -10,8 +10,15 @@
 export PATH="/mnt/SDCARD/System/bin:$PATH"
 export LD_LIBRARY_PATH="/mnt/SDCARD/System/lib:/usr/trimui/lib:$LD_LIBRARY_PATH"
 
-crossmix_state_update(){
+if pgrep -f "/Scrapper/Menu/"; then
+    database_file="/mnt/SDCARD/Apps/Scraper/Menu/Menu_cache7.db"
+    json_file="/mnt/SDCARD/System/etc/scraper.json"
+else
+    database_file="/mnt/SDCARD/Apps/SystemTools/Menu/Menu_cache7.db"
     json_file="/mnt/SDCARD/System/etc/crossmix.json"
+fi
+
+crossmix_state_update() {
     if [ ! -f "$json_file" ]; then
         echo "{}" >"$json_file"
     fi
@@ -29,11 +36,6 @@ mainui_state_update() {
     fi
 
     # Update the SQLite database
-    if pgrep -f "/SystemTools/Menu/"; then
-        database_file="/mnt/SDCARD/Apps/SystemTools/Menu/Menu_cache7.db"
-    else
-        database_file="/mnt/SDCARD/Apps/Scraper/Menu/Menu_cache7.db"
-    fi
 
     sqlite3 "$database_file" <<EOF
 UPDATE Menu_roms SET disp = '$label_str ($value_str)', pinyin = '$label_str ($value_str)', cpinyin = '$label_str ($value_str)', opinyin = '$label_str ($value_str)' WHERE disp LIKE '$label_str (%)';
@@ -59,4 +61,3 @@ else
     mainui_state_update "$1" "$2"
     crossmix_state_update "$1" "$2"
 fi
-
