@@ -10,8 +10,9 @@
   "rompath": "../../Roms/NAOMI",
   "imgpath": "../../Imgs/NAOMI",
   "useswap": 1,
-  "shortname": 0,
+  "shortname": 1,
   "hidebios": 1,
+  "extlist": "zip",
   "launchlist": [
     {
       "name": "--------------    libretro    --------------",
